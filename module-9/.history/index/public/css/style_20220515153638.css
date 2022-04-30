@@ -1,0 +1,423 @@
+    body {
+        font-size: 13px;
+        line-height: 22px;
+        font-family: 'Open Sans', sans-serif;
+        background: #fff;
+    }
+    
+    h5 {
+        font-family: Open Sans, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #313131;
+        margin: 0 0 14px 0;
+    }
+    
+    h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 32px;
+        color: #222529;
+        margin: 0 0 20px 0;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        margin: 0 0 32px 0;
+    }
+    /*Module 9 -Tai Em*/
+    
+    .portoTotal {}
+    
+    .container {}
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .vc_column_container {}
+    
+    .portoContainer {}
+    
+    .portotop {}
+    
+    .portoTopicon {
+        padding-left: 150px;
+        margin-bottom: 12px;
+    }
+    
+    .porto-icon {
+        color: #0088cc;
+        background: transparent;
+        border-style: solid;
+        border-color: #dddddd;
+        border-width: 2px;
+        width: 76px;
+        height: 76px;
+        line-height: 76px;
+        border-radius: 40px;
+        font-size: 40px;
+    }
+    
+    .portoheader {
+        text-align: center;
+    }
+    
+    .portodescription {
+        text-align: center;
+    }
+    
+    .porto-siscon-top {
+        text-align: center;
+    }
+    
+    .textop {
+        color: #fff !important;
+    }
+    
+    .custom_heading {
+        font-weight: bolder;
+    }
+    
+    html .btn-modern {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+    
+    html .btn-quaternary {
+        background-color: #0e0f11;
+        border-color: #0e0f11 #0e0f11 #000;
+    }
+    
+    html .btn {
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+    }
+    
+    .textviewsale {
+        border-radius: 0;
+        font-size: 15px !important;
+    }
+    
+    html .btn:hover {
+        color: white;
+    }
+    
+    .coupon-sale-light-bg b {
+        background: #fff !important;
+        color: #222529 !important;
+    }
+    
+    .coupon-sale-text b {
+        display: inline-block;
+        font-size: 1.6em;
+        font-weight: 700;
+        padding: 5px 8px;
+    }
+    
+    html .heading-light,
+    html .lnk-light,
+    html .text-color-light {
+        color: #ffffff!important;
+    }
+    
+    .coupon-sale-text {
+        transform: rotate( -2deg);
+        letter-spacing: -.01em;
+        position: relative;
+    }
+    
+    .coupon-sale-text b {
+        display: inline-block;
+        font-size: 1.6em;
+        font-weight: 700;
+        padding: 5px 8px;
+        background-color: #ff7272;
+        color: #fff;
+    }
+    
+    .coupon-sale-text i {
+        font-style: normal;
+        position: absolute;
+        left: -2.25em;
+        top: 50%;
+        transform: translateY(-50%) rotate( -90deg);
+        font-size: .65em;
+        opacity: .6;
+        letter-spacing: 0;
+    }
+    /*Module 10*/
+    
+    .owl-carousel .owl-stage {
+        position: relative;
+        touch-action: manipulation;
+        display: flex;
+        padding-left: 100px;
+        transform: translate3d(0px, 0px, 0px);
+        transition: all 0s ease 0s;
+        width: 1500px;
+    }
+    /*Module 12*/
+    
+    .footer .widget-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+        padding-top: 60px;
+    }
+    
+    .footer .block.newsletter .form.subscribe {
+        display: block;
+    }
+    
+    .footer .block.newsletter .field {
+        margin-bottom: 1rem;
+    }
+    
+    .footer .newsletter input {
+        height: 44px;
+        border: none;
+        border-radius: 30px;
+        background: #292c30;
+        padding-left: 1.5rem;
+        font-size: .8125rem;
+    }
+    
+    .footer .newsletter .action.subscribe {
+        height: 44px;
+        border: none;
+        border-radius: 30px;
+        padding: 0 1.75rem;
+        font-size: .8125rem;
+        font-weight: 700;
+        font-family: inherit;
+        letter-spacing: 0;
+        margin-left: -1px;
+    }
+    
+    html .action.primary {
+        color: #fff;
+        background-color: #08c;
+        border-color: #08c #08c #069;
+    }
+    
+    .footer .widget {
+        margin-bottom: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    .footer .widget:first-child {
+        margin-top: 0;
+    }
+    
+    .footer .contact-info .contact-details span {
+        line-height: 1.4;
+    }
+    
+    footer .contact-info .contact-details strong {
+        line-height: 1em;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .footer-bottom .widget.widget_custom_html {
+        margin: 0;
+    }
+    
+    .footer {
+        background-color: #222529;
+        color: #777777;
+    }
+    
+    .footer-middle a {
+        color: #A8A8A8;
+        text-decoration: none
+    }
+    
+    .footer-middle a:hover {
+        color: #ffffff;
+    }
+    
+    .footer .follow-us .share-links a:not(:hover) {
+        background: none;
+        color: #fff;
+    }
+    
+    .footer .follow-us .share-links a {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #313438;
+        box-shadow: none;
+    }
+    
+    .widget.follow-us .share-links a {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        margin: 2px;
+        overflow: hidden;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
+        transition: all 0.2s;
+        font-size: 14px;
+    }
+    
+    .share-facebook:hover {
+        background: #0073b2;
+    }
+    
+    .share-twitter:hover {
+        background: #0073b2;
+    }
+    
+    .share-linkedin:hover {
+        background: #0073b2;
+    }
+    
+    .widget>.share-links>.share-facebook {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #313438;
+        box-shadow: none;
+    }
+    
+    .footer .follow-us .share-links a {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #313438;
+        box-shadow: none;
+    }
+    
+    .footer .widget .tagcloud a {
+        background: none;
+        border-radius: 0;
+        font-size: 11px !important;
+        font-weight: 400;
+        text-transform: none;
+        padding: 0.6em;
+        border: 1px solid #313438;
+    }
+    
+    .footer .widget .tagcloud a:hover {
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+    
+    .widget .tagcloud a {
+        margin: 0.3846em 0.3846em 0.3846em 0;
+        padding: 0.25rem 0.5rem;
+        line-height: 1;
+        display: inline-block;
+        text-decoration: none;
+        font-size: .75em !important;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 10px;
+    }
+    
+    .footer-bottom,
+    .footer-bottom p {
+        color: #A8A8A8;
+    }
+    
+    .footer-bottom {
+        background-color: #222529;
+        padding: 15px 0;
+        font-size: .9em;
+        border-top: 1px solid #313438;
+        left: 10px;
+        bottom: 0;
+        right: 10px;
+    }
+    
+    .payment-icons {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .payment-icons .payment-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 3px;
+        width: 56px;
+        height: 32px;
+        background-color: #d6d3cc;
+        background-size: 80% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: opacity .25s;
+        filter: invert(1);
+        border-radius: 4px;
+    }
+    
+    .payment-icons .visa {
+        background-image: url(../image/payment-icons/payment-visa.svg);
+    }
+    
+    .payment-icons .paypal {
+        background-image: url(../image/payment-icons/payment-paypal.svg);
+        background-size: 85% auto;
+        background-position: 50% 48%;
+    }
+    
+    .payment-icons .stripe {
+        background-image: url(../image/payment-icons/payment-stripe.png);
+        background-size: 60% auto;
+    }
+    
+    .payment-icons .verisign {
+        background-image: url(../image/payment-icons/payment-verisign.svg);
+    }
+    
+    .custom-block {
+        text-align: right;
+    }
+    
+    .footer .footer-bottom>.container {
+        justify-content: flex-start;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer-bottom .custom-block.f-right {
+        margin: 0;
+        order: 2;
+        padding: 10px 0 10px 8px;
+        text-align: right;
+        flex: auto;
+    }
+    
+    .footer .footer-bottom .custom-block.f-right {
+        padding-left: 1000px;
+        text-align: right;
+    }
+    
+    .footer-bottom address {
+        order: 1;
+        padding: 10px 0px 10px 0;
+        text-align: left;
+        margin-right: auto;
+        flex: auto;
+        color: red;
+        text-align: center;
+    }

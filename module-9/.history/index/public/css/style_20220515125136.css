@@ -1,0 +1,164 @@
+    body {
+        font-size: 13px;
+        line-height: 22px;
+        font-family: 'Open Sans', sans-serif;
+        background: #fff;
+    }
+    
+    h5 {
+        font-family: Open Sans, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #313131;
+        margin: 0 0 14px 0;
+    }
+    
+    h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 32px;
+        color: #222529;
+        margin: 0 0 20px 0;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        margin: 0 0 32px 0;
+    }
+    /*Module 9 -Tai Em*/
+    
+    .portoTotal {}
+    
+    .container {}
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .vc_column_container {}
+    
+    .portoContainer {}
+    
+    .portotop {}
+    
+    .portoTopicon {
+        padding-left: 150px;
+        margin-bottom: 12px;
+    }
+    
+    .porto-icon {
+        color: #0088cc;
+        background: transparent;
+        border-style: solid;
+        border-color: #dddddd;
+        border-width: 2px;
+        width: 76px;
+        height: 76px;
+        line-height: 76px;
+        border-radius: 40px;
+        font-size: 40px;
+    }
+    
+    .portoheader {
+        text-align: center;
+    }
+    
+    .portodescription {
+        text-align: center;
+    }
+    
+    .porto-siscon-top {
+        text-align: center;
+    }
+    
+    .textop {
+        color: #fff !important;
+    }
+    
+    .custom_heading {
+        font-weight: bolder;
+    }
+    
+    html .btn-modern {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+    
+    html .btn-quaternary {
+        background-color: #0e0f11;
+        border-color: #0e0f11 #0e0f11 #000;
+    }
+    
+    html .btn {
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+    }
+    
+    .textviewsale {
+        border-radius: 0;
+        font-size: 15px !important;
+    }
+    
+    html .btn:hover {
+        color: white;
+    }
+    
+    .coupon-sale-light-bg b {
+        background: #fff !important;
+        color: #222529 !important;
+    }
+    
+    .coupon-sale-text b {
+        display: inline-block;
+        font-size: 1.6em;
+        font-weight: 700;
+        padding: 5px 8px;
+    }
+    
+    html .heading-light,
+    html .lnk-light,
+    html .text-color-light {
+        color: #ffffff!important;
+    }
+    
+    .coupon-sale-text {
+        transform: rotate( -2deg);
+        letter-spacing: -.01em;
+        position: relative;
+    }
+    
+    .coupon-sale-text b {
+        display: inline-block;
+        font-size: 1.6em;
+        font-weight: 700;
+        padding: 5px 8px;
+        background-color: #ff7272;
+        color: #fff;
+    }
+    
+    .coupon-sale-text i {
+        font-style: normal;
+        position: absolute;
+        left: -2.25em;
+        top: 50%;
+        transform: translateY(-50%) rotate( -90deg);
+        font-size: .65em;
+        opacity: .6;
+        letter-spacing: 0;
+    }
+    /*Module 10*/
+    
+    .owl-stage {
+        position: relative;
+        touch-action: manipulation;
+    }

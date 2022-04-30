@@ -1,0 +1,47 @@
+body {
+    font-size: 13px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+
+.portoTotal {
+    background-color: red;
+}
+
+.row {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vc_column_container {
+    background-color: green;
+}
+
+.portoContainer {
+    background-color: yellow;
+}
+
+.portotop {}
+
+.portoTopicon {
+    color: #0088cc;
+    background: transparent;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    border-radius: 40px;
+    font-size: 40px;
+}
+
+.portoheader {
+    background-color: black;
+}
+
+.portodescription {
+    background-color: white;
+}
