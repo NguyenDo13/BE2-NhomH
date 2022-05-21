@@ -1,0 +1,23 @@
+.titleinput-login {
+    color: #777777;
+}
+
+.input-login {
+    border: 1px solid;
+    outline: none;
+    box-shadow: none;
+    text-align: left;
+    font-size: 0.85rem;
+    width: 100px;
+    background-color: #fff;
+    color: #777777;
+    padding: 8px 12px;
+}
+
+.required {
+    color: red;
+    cursor: default;
+    border: none;
+}
+
+body {}
