@@ -19,6 +19,9 @@ a:hover {
      font-weight: 750 !important;
      padding: 10px;
 }
+.thumbnail{
+     display: inherit;
+}
 
 #cart tr {
      border-bottom: 1px solid #e7e7e7;
