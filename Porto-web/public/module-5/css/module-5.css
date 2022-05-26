@@ -1,4 +1,4 @@
-.icon-sections {
+.module-5 .icon-sections {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -8,17 +8,17 @@
      margin-right: -2px;
 }
 
-.icon-sections .icon-title {
+.module-5 .icon-sections .icon-title {
      font-weight: 750;
 }
 
-.icon-sections h6 {
+.module-5 .icon-sections h6 {
      font-size: 14;
      font-weight: 350;
 
 }
 
-.bg-watches {
+.module-5 .bg-watches {
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
@@ -27,29 +27,29 @@
      background-image: url(../images/bg-watch.png);
 }
 
-.bg-watches ::before {
+.module-5 .bg-watches ::before {
      content: " ";
      display: table;
 }
 
-.bg-watches .pad-bg-watches {
+.module-5 .bg-watches .pad-bg-watches {
      padding: 20px;
 }
 
-.bg-watches .title-watches {
+.module-5 .bg-watches .title-watches {
      line-height: 1;
      font-size: 1.4rem;
      font-weight: 700;
 }
 
-.bg-watches .percent-watches {
+.module-5 .bg-watches .percent-watches {
      font-size: 1.7125rem;
      line-height: 1;
      font-weight: 800;
      color: #0088cc !important;
 }
 
-.bg-watches .percent-watches sup {
+.module-5 .bg-watches .percent-watches sup {
      padding: 0;
      margin: 0;
      display: inline-block;
@@ -58,13 +58,13 @@
 }
 
 
-.bg-watches .percent-watches del {
+.module-5 .bg-watches .percent-watches del {
      color: #222529;
      padding: 0;
      margin: 0;
 }
 
-.btn-shop {
+.module-5 .btn-shop {
      color: #fff;
      background-color: #222529;
      border-color: #222529 #222529 #0b0c0e;
@@ -74,11 +74,11 @@
      font-weight: 700;
 }
 
-.cl-deal {
+.module-5 .cl-deal {
      background-color: #0188cc;
 }
 
- .bg-deal {
+.module-5 .bg-deal {
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
@@ -90,32 +90,32 @@
      flex-direction: column;
      justify-content: space-around;
 }
-.bg-deal .content-deal{
+.module-5 .bg-deal .content-deal{
      display: flex;
      justify-content: center;
      align-items: center;
 }
-.bg-deal .content-deal .text-deal {
+.module-5 .bg-deal .content-deal .text-deal {
      display: flex;
      flex-direction: column;
      align-items: flex-end;
      padding-right: 10px;
 }
 
-.bg-deal .content-deal .text-deal h3{
+.module-5 .bg-deal .content-deal .text-deal h3{
      line-height: 1;
      font-size: 1.27rem;
      font-weight: 700;
 }
 
-.bg-deal .content-deal .text-deal h4{
+.module-5 .bg-deal .content-deal .text-deal h4{
      font-size: 0.7375rem;
     color: #777777;
     line-height: 0.75;
     font-weight: 700;
 }
 
-.bg-bag {
+.module-5 .bg-bag {
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
@@ -127,20 +127,20 @@
      flex-direction: column;
      justify-content: center;
 }
-.bg-bag .content-bag{
+.module-5 .bg-bag .content-bag{
      display: flex;
      flex-direction: column;
      align-items: flex-end;
      padding-right: 20px;
 }
 
-.bg-bag .content-bag h3{
+.module-5 .bg-bag .content-bag h3{
      line-height: 1;
      font-size: 1.37rem;
      font-weight: 700;
 }
 
-.bg-bag .content-bag h4{
+.module-5 .bg-bag .content-bag h4{
      font-size: 0.7375rem;
      text-transform: uppercase;
      color: #ff7272;
