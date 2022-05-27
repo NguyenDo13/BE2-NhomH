@@ -20,7 +20,7 @@
             data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/shop4_home_slider1.jpg" class="d-block w-100" alt="...">
+                    <img src="module-4/images/shop4_home_slider1.jpg" class="d-block w-100" alt="...">
                     <div class="card-img-overlay " style="padding: 50px 0 0 100px;">
                         <h3 class="card-title " style="color: gray;font-size: 18px;"> Find the Boundaries. Push Through!
                         </h3>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <img src="images/shop4_home_slider2.jpg" class="d-block w-100" alt="...">
+                    <img src="module-4/images/shop4_home_slider2.jpg" class="d-block w-100" alt="...">
                     <div class="card-img-overlay" style="padding: 50px 100px 0 800px;">
                         <div class="wpb_wrapper vc_column-inner">
                             <h4 style="font-size: 28px;color: #999999;line-height: 1;font-weight:500"
