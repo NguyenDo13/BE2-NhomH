@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="module-15/css/style.css" />
 
     
 
@@ -79,7 +79,7 @@
                           <div class="col-md-4 col-xs-6">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/product-75-150x150.jpg" alt="" width="100%">
+                                    <img src="module-15/images/product-75-150x150.jpg" alt="" width="100%">
                                     <div class="product-label text-center">
                                         <span class="sale">-30%</span>
                                         <span class="new">Hot</span>
@@ -110,7 +110,7 @@
                         <div class="col-md-4 col-xs-6">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/product-75-150x150.jpg" alt="" width="100%">
+                                <img src="module-15/images/product-75-150x150.jpg" alt="" width="100%">
                                     <div class="product-label text-center">
                                         <span class="sale">-30%</span>
                                         <span class="new">Hot</span>
@@ -142,7 +142,7 @@
                         <div class="col-md-4 col-xs-6">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/product-75-150x150.jpg" alt="" width="100%">
+                                <img src="module-15/images/product-75-150x150.jpg" alt="" width="100%">
                                     <div class="product-label text-center">
                                         <span class="sale">-30%</span>
                                         <span class="new">Hot</span>

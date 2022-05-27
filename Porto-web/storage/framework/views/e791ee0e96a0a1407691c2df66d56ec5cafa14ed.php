@@ -22,6 +22,6 @@
 </head>
 <body>
 <?php include public_path('module-13/13.php')?>  
-  
+<?php include public_path('module-15/15.php')?>  
 </body>
 </html><?php /**PATH D:\BE2-NhomH\Porto-web\resources\views/category.blade.php ENDPATH**/ ?>
