@@ -12,8 +12,13 @@
      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
      <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link rel="stylesheet" href="{{ asset('module-17/css/css.css') }}">
+    <link rel="stylesheet" href="{{ asset('module-17/vendor/font-awesome/css/font-awesome.min.css') }}" type="text/css">
 </head>
 <body>
+<?php include public_path('module-17/17.php')?>
      <?php include public_path('module-19/19.php')?>
      
 </body>

@@ -29,7 +29,7 @@
 
                 <div class="product-img">
                     <a href="" class="delete" aria-label="Remove this item"><i class="fa fa-times"></i></a>
-                    <img src="image/product-75-150x150.jpg" alt="" width="100px" height="100px">
+                    <img src="{{ asset('module-22/image/product-75-150x150.jpg') }}" alt="" width="100px" height="100px">
                 </div>
 
 
