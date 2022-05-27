@@ -8,7 +8,9 @@
     <title>Document</title>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
-    <link rel="stylesheet" href="css/css.css">
+    
+    <link rel="stylesheet" href="module-22/css/css.css">
+    
 </head>
 
 <body>
@@ -29,7 +31,7 @@
 
                 <div class="product-img">
                     <a href="" class="delete" aria-label="Remove this item"><i class="fa fa-times"></i></a>
-                    <img src="{{ asset('module-22/image/product-75-150x150.jpg') }}" alt="" width="100px" height="100px">
+                    <img src="module-22/image/product-75-150x150.jpg" alt="" width="100px" height="100px">
                 </div>
 
 
