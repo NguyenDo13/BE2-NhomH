@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-.title {
+.module-23 .title {
      display: flex;
      justify-self: center;
      justify-content: center;
      align-items: center;
 }
 
-.title .name-cart {
+.module-23 .title .name-cart {
      color: #0088cc;
      opacity: 1;
 }
 
-.title h4,
-.title i {
+.module-23 .title h4,
+.module-23 .title i {
      font-size: 1.25rem;
      font-weight: 700;
      color: #777777;
 
 }
 
-.title h4 {
+.module-23 .title h4 {
      font-family: 'Poppins', sans-serif;
 }
 
-i {
+.module-23 i {
      margin: 0 20 0 20;
 }

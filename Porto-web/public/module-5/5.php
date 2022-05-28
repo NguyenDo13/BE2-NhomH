@@ -1,7 +1,5 @@
 
 <div class="module-5">
-
-
      <div class="row">
           <div class="col-md-4 icon-sections">
                <img src="images/icon-car.png" alt="">

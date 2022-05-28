@@ -2,13 +2,13 @@
   background-color: #fbfbfb;
 }
 
-.pad-module {
+.module-6 .pad-module {
   padding: 40px;
   /* margin: -20px; */
 }
 
 
-.title-module h2 {
+.module-6 .title-module h2 {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -19,21 +19,21 @@
   line-height: 1.4;
 }
 
-.title-module h2::before {
+.module-6 .title-module h2::before {
   content: "";
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   flex: 1;
   margin-right: 1em;
 }
 
-.title-module h2::after {
+.module-6 .title-module h2::after {
   content: '';
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   flex: 1;
   margin-left: 1em;
 }
 
-.image-item .labels {
+.module-6 .image-item .labels {
   line-height: 1;
   color: #fff;
   font-weight: 600;
@@ -47,7 +47,7 @@
 
 }
 
-.image-item .labels .onhot {
+.module-6 .image-item .labels .onhot {
   background: #2ba968;
   color: #ffffff;
   width: 40px;
@@ -59,7 +59,7 @@
   flex-direction: column;
 }
 
-.image-item .labels .onsale {
+.module-6 .image-item .labels .onsale {
   background: #da5555;
   color: #ffffff;
   width: 40px;
@@ -72,17 +72,17 @@
   flex-direction: column;
 }
 
-.wrap-selects {
+.module-6 .wrap-selects {
   display: flex;
   justify-content: center;
 }
 
-.wrap-selects .btn-add-to-cart {
+.module-6 .wrap-selects .btn-add-to-cart {
   background: #f4f4f4;
   padding: 10 20 10 20;
 }
 
-.wrap-selects .btn-add-to-cart a {
+.module-6 .wrap-selects .btn-add-to-cart a {
   text-transform: uppercase;
   color: #6f6e6b;
   font-size: 0.85em;
@@ -92,13 +92,13 @@
   justify-content: center;
 }
 
-.wrap-selects .btn-add-to-cart a div {
+.module-6 .wrap-selects .btn-add-to-cart a div {
   position: relative;
   bottom: 3px;
   right: 4px;
 }
 
-.wrap-selects .add-to-wishlist {
+.module-6 .wrap-selects .add-to-wishlist {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,13 +108,13 @@
   height: 41px;
 }
 
-.wrap-selects .btn-add-to-cart {
+.module-6 .wrap-selects .btn-add-to-cart {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.wrap-selects .quick-view {
+.module-6 .wrap-selects .quick-view {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,27 +124,27 @@
   height: 41px;
 }
 
-.product .star-item i {
+.module-6 .product .star-item i {
   color: rgba(0, 0, 0, 0.16);
   font-size: 11px;
   margin-bottom: 9px;
 }
 
-.tag-item {
+.module-6 .tag-item {
   font-size: 0.75em;
   color: #afafaf;
   text-transform: uppercase;
   margin: 0px;
 }
 
-.tag-item:hover {
+.module-6 .tag-item:hover {
   text-decoration: none;
   font-size: 0.75em;
   color: #0099e6;
   text-transform: uppercase;
 }
 
-.name-item h3 {
+.module-6 .name-item h3 {
   font-size: 1em;
   display: block;
   color: #4e5154;
@@ -152,19 +152,19 @@
   margin-bottom: 6px;
 }
 
-.name-item h3:hover,
-.name-item:hover {
+.module-6 .name-item h3:hover,
+.module-6 .name-item:hover {
   text-decoration: none;
   font-size: 1em;
   display: block;
   color: #0099e6;
 }
 
-.image-item {
+.module-6 .image-item {
   margin-bottom: 15px;
 }
 
-.price-item {
+.module-6 .price-item {
   font-size: 1.135em;
   font-weight: 600;
   margin-bottom: 13px;
@@ -172,38 +172,38 @@
 
 
 
-.product:hover .image-item {
+.module-6 .product:hover .image-item {
   box-shadow: 0 25px 35px -5px rgb(0 0 0 / 10%);
 
 }
 
-.product:hover .btn-add-to-cart {
+.module-6 .product:hover .btn-add-to-cart {
   background: #0088cc;
   color: white;
 
 }
 
-.product:hover .btn-add-to-cart a {
+.module-6 .product:hover .btn-add-to-cart a {
   background: #0088cc;
   color: white;
   text-decoration: none;
 }
 
-.btn-add-to-cart:hover,
-.btn-add-to-cart:hover a {
+.module-6 .btn-add-to-cart:hover,
+.module-6 .btn-add-to-cart:hover a {
   background: #2b2b2d !important;
   color: white !important;
 
 }
 
-.add-to-wishlist{
+.module-6 .add-to-wishlist{
   /* margin-right: -12px; */
   visibility: hidden;
   opacity: 0;
   transform: translate(11px);
   transition: visibility 0s, opacity 0.5s linear , transform 0.2s linear;
 }
-.quick-view {
+.module-6 .quick-view {
   /* margin-left: -12px; */
   visibility: hidden;
   opacity: 0;
@@ -211,13 +211,13 @@
   transition: visibility 0s, opacity 0.5s linear, transform 0.2s linear;
 }
 
-.product:hover .quick-view{
+.module-6 .product:hover .quick-view{
   visibility: visible;
   opacity: 2;
   /* margin-left: 0px; */
   transform: translate(6px);
 }
-.product:hover .add-to-wishlist{
+.module-6 .product:hover .add-to-wishlist{
   visibility: visible;
   opacity: 2;
   /* margin-right: 0px; */
