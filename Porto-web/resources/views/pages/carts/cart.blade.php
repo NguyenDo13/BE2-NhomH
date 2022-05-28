@@ -11,15 +11,15 @@
      crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet"
      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 <body>
      {{-- add header at here --}}
      
 
-     <?php include public_path('module-23/23.php')?>
-     <?php include public_path('module-25/25.php')?>
+     @include('pages.carts.module-23')
+     @include('pages.carts.module-25')
 
 </body>
 </html>

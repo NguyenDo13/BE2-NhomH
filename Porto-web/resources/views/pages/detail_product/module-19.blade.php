@@ -1,17 +1,3 @@
-<html>
-
-<head>
-     <title>Module 19</title>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-     <link href="css/module-19.css" rel="stylesheet" type="text/css" />
-</head>
 <div class="module-19 products">
      <div class="pad-module">
           <div class="container mt-5 py-5 title-module">
@@ -25,7 +11,7 @@
                                    <div class="onhot"><span>Hot</span></div>
                                    <div class="onsale"><span>-19%</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-19/images/product-1.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-1.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Fashion</a>
@@ -67,7 +53,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-19/images/product-2.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-2.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Headphone, music</a>
@@ -105,7 +91,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-19/images/product-3.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-3.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">watches</a>
@@ -147,7 +133,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-19/images/product-4.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-4.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Clothing</a>
@@ -189,4 +175,3 @@
           </div>
      </div>
 
-</html>

@@ -12,7 +12,7 @@
                                    <div class="onhot"><span>Hot</span></div>
                                    <div class="onsale"><span>-19%</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-6/images/product-1.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-1.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Fashion</a>
@@ -54,7 +54,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-6/images/product-2.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-2.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Headphone, music</a>
@@ -92,7 +92,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-6/images/product-3.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-3.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">watches</a>
@@ -134,7 +134,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="module-6/images/product-4.png" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-4.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Clothing</a>

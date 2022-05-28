@@ -1,15 +1,3 @@
-<html lang="en">
-
-<head>
-     <title></title>
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-          type='text/css'>
-
-</head>
 <div class="module-25">
      <table id="cart" style="width: 100%;">
           <thead>
@@ -25,7 +13,7 @@
                <tr>
                     <td class="item-thumbnail">
                          <div class="position-relative">
-                              <a href=""><img src="images/product-1.png" alt="" class="img-item"></a>
+                              <a href=""><img src="{{ asset('assets/module-25/images/product-1.png') }}" alt="" class="img-item"></a>
                               <a href="" class="remove-item" aria-label="Remove this item"><i
                                         class="fa fa-times"></i></a>
                          </div>
@@ -50,5 +38,3 @@
           </tbody>
      </table>
 </div>
-
-</html>

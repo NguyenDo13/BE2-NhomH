@@ -2,21 +2,21 @@
 <div class="module-5">
      <div class="row">
           <div class="col-md-4 icon-sections">
-               <img src="images/icon-car.png" alt="">
+               <img src="{{ asset('assets/images/icon-car.png') }}" alt="">
                <div>
                     <h6 class="icon-title">FREE SHIPPING & RETURN</h6>
                     <h6>Free shipping on all orders over $99.</h6>
                </div>
           </div>
           <div class="col-md-4 icon-sections ">
-               <img src="images/icon-money.png" alt="">
+               <img src="{{ asset('assets/images/icon-money.png') }}" alt="">
                <div>
                     <h6 class="icon-title">MONEY BACK GUARANTEE</h6>
                     <h6>100% money back guarantee</h6>
                </div>
           </div>
           <div class="col-md-4 icon-sections ">
-               <img src="images/icon-online.png" alt="">
+               <img src="{{ asset('assets/images/icon-online.png') }}" alt="">
                <div>
                     <h6 class="icon-title">ONLINE SUPPORT 24/7</h6>
                     <h6>Lorem ipsum dolor sit amet.</h6>
