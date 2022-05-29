@@ -13,7 +13,7 @@
                <tr>
                     <td class="item-thumbnail">
                          <div class="position-relative">
-                              <a href=""><img src="{{ asset('assets/module-25/images/product-1.png') }}" alt="" class="img-item"></a>
+                              <a href=""><img src="{{ asset('assets/clients/images/product-1.png') }}" alt="" class="img-item"></a>
                               <a href="" class="remove-item" aria-label="Remove this item"><i
                                         class="fa fa-times"></i></a>
                          </div>

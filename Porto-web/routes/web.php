@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,19 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.home.home');
+    return view('clients.pages.home');
 });
 
 
-Route::get('/cart', function () {
-    return view('pages.carts.cart');
-});
+Route::get('/cart', [CartController::class, 'initData']);
 
 Route::get('/product', function () {
-    return view('pages.detail_product.product');
+    return view('clients.pages.detail_product');
 });
 Route::get('/category', function () {
-    return view('category');
+    return view('clients.pages.categories');
 });
 
 

@@ -1,8 +1,7 @@
-
-<div class="module-6 products">
+<div class="module-19 products">
      <div class="pad-module">
-          <div class="container text-center mt-5 py-5 title-module">
-               <h2>Featured Products</h2>
+          <div class="container mt-5 py-5 title-module">
+               <h2>Related products</h2>
           </div>
           <div class="container">
                <div class="row mx-auto">
@@ -12,7 +11,7 @@
                                    <div class="onhot"><span>Hot</span></div>
                                    <div class="onsale"><span>-19%</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-1.png') }}" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/clients/images/product-1.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Fashion</a>
@@ -54,7 +53,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-2.png') }}" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/clients/images/product-2.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Headphone, music</a>
@@ -92,7 +91,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-3.png') }}" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/clients/images/product-3.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">watches</a>
@@ -134,7 +133,7 @@
                               <div class="labels">
                                    <div class="onhot"><span>Hot</span></div>
                               </div>
-                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/images/product-4.png') }}" alt="">
+                              <img class="mb-3 " style="width: 280px; height:auto" src="{{ asset('assets/clients/images/product-4.png') }}" alt="">
                          </div>
                          <div class="item-content">
                               <a href="" class="tag-item">Clothing</a>
@@ -175,3 +174,4 @@
                </div>
           </div>
      </div>
+

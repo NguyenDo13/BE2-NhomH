@@ -10,13 +10,13 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+     <link href="{{ asset('assets/clients/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="{{ asset('assets/clients/css/style.css') }}">
 </head>
 <body>
 <?php include public_path('module-22/22.php')?>
 <?php include public_path('module-4/4.php')?>
-@include('pages.home.module-5')
-@include('pages.home.module-6')
+@include('clients.modules.module-5')
+@include('clients.modules.module-6')
 </body>
 </html>
