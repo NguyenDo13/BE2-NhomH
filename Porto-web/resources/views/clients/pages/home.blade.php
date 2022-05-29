@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
      <meta charset="UTF-8">
@@ -12,11 +12,30 @@
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
      <link href="{{ asset('assets/clients/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="{{ asset('assets/clients/css/style.css') }}">
+     
 </head>
 <body>
-<?php include public_path('module-22/22.php')?>
-<?php include public_path('module-4/4.php')?>
 @include('clients.modules.module-5')
 @include('clients.modules.module-6')
 </body>
-</html>
+</html> --}}
+
+@extends('layouts.master')
+
+@section('title')
+    Trang chủ
+@endsection
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="{{ asset('assets/clients/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('assets/clients/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+@endsection
+
+@section('body')
+@include('clients.modules.module-5')
+@include('clients.modules.module-6')
+@endsection
