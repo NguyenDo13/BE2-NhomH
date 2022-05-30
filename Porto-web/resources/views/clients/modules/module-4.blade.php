@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-</head>
-
-<body>
-    <div class="type-4">
+    <div class="module-4">
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
             data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="module-4/images/shop4_home_slider1.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ asset('assets/clients/images/shop4_home_slider1.png') }}" class="d-block w-100" alt="...">
                     <div class="card-img-overlay " style="padding: 50px 0 0 100px;">
                         <h3 class="card-title " style="color: gray;font-size: 18px;"> Find the Boundaries. Push Through!
                         </h3>
@@ -48,7 +32,7 @@
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <img src="module-4/images/shop4_home_slider2.jpg" class="d-block w-100" alt="...">
+                    <img src="{{ asset('assets/clients/images/shop4_home_slider2.png') }}" class="d-block w-100" alt="...">
                     <div class="card-img-overlay" style="padding: 50px 100px 0 800px;">
                         <div class="wpb_wrapper vc_column-inner">
                             <h4 style="font-size: 28px;color: #999999;line-height: 1;font-weight:500"
@@ -81,6 +65,3 @@
             </button>
         </div>
     </div>
-</body>
-
-</html>
