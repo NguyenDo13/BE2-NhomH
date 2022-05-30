@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-</head> -->
-
-<body>
-    <div class="container">
+<div class="module-13">
+    
+<div class="container">
         <div class="col-md-9" style="float: right;">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="module-13/images//fashion-banner2.jpg" class="d-block w-100" alt="...">
+                        <img src="{{ asset('assets/clients/images/fashion-banner.png') }}" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="module-13/images//fashion-banner.jpg" class="d-block w-100" alt="...">
+                        <img src="{{ asset('assets/clients/images/fashion-banner2.png') }}" class="d-block w-100" alt="...">
                     
                     </div>
                 </div>
@@ -40,6 +25,5 @@
             </button>
         </div>
     </div>
-</body>
 
-</html>
+</div>
