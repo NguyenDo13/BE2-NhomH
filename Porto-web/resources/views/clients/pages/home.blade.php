@@ -23,4 +23,5 @@
 @include('clients.modules.module-4')
 @include('clients.modules.module-5')
 @include('clients.modules.module-6')
+@include('clients.modules.module-10')
 @endsection
