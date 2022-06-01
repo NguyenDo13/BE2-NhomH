@@ -43,7 +43,7 @@
             <div class="row border">
                 <div class="buttons_added qty">
                     <button class="minus is-form" type="button" value="-">-</button>
-                    <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number"
+                    <input aria-label="quantity" class="input-qty" max="100" min="0" name="" type="number"
                         value="1">
                     <button class="plus is-form" type="button" value="+">+</button>
                 </div>
