@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,8 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
+<body> --}}
+    <div class="module-11 container">
         <div class="row">
             <div class="col-md-3">
                 <div class="widget-products">
@@ -24,8 +24,8 @@
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/FUTURE/Future-1.jpg" alt="">
-                                <img class="chuyendoi" src="images/loa-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/FUTURE/Future-1.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{ asset('assets/clients/images/loa-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -45,7 +45,7 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/FUTURE/Future-2.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/FUTURE/Future-2.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -65,7 +65,7 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/FUTURE/Future-3.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/FUTURE/Future-3.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -94,7 +94,7 @@
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/BEST/Best-1.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/BEST/Best-1.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -114,8 +114,8 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/BEST/Best-2.jpg" alt="">
-                                <img class="chuyendoi" src="images/nit-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/BEST/Best-2.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{asset('assets/clients/images/nit-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -135,8 +135,8 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/BEST/Best-3.jpg" alt="">
-                                <img class="chuyendoi" src="images/giay-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/BEST/Best-3.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{asset('assets/clients/images/giay-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -165,8 +165,8 @@
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/LATES/LATES-1.jpg" alt="">
-                                <img class="chuyendoi" src="images/loa-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/LATES/LATES-1.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{ asset('assets/clients/images/loa-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -186,8 +186,8 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/LATES/LATES-2.jpg" alt="">
-                                <img class="chuyendoi" src="images/kinh-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/LATES/LATES-2.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{ asset('assets/clients/images/kinh-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -207,7 +207,7 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/LATES/LATES-3.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/LATES/LATES-3.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -236,7 +236,7 @@
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/TOP/TOP-1.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/TOP/TOP-1.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -256,8 +256,8 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/TOP/TOP-2.jpg" alt="">
-                                <img class="chuyendoi" src="images/loa-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/TOP/TOP-2.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{ asset('assets/clients/images/loa-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -277,8 +277,8 @@
                         </li>
                         <li>
                             <a href="" class="product-image">
-                                <img src="images/TOP/TOP-3.jpg" alt="">
-                                <img class="chuyendoi" src="images/nit-chuyendoi.jpg" alt="">
+                                <img src="{{ asset('assets/clients/images/TOP/TOP-3.jpg')}}" alt="">
+                                <img class="chuyendoi" src="{{ asset('assets/clients/images/nit-chuyendoi.jpg')}}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
@@ -302,9 +302,9 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    {{-- <script src="js/jquery-3.3.1.min.js"></script>
     <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="js/11.js"></script>
 </body>
 
-</html>
+</html> --}}

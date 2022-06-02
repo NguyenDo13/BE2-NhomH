@@ -27,6 +27,7 @@
     @include('clients.modules.module-8')
     @include('clients.modules.module-9')
     @include('clients.modules.module-10')
+    @include('clients.modules.module-11')
 @section('js')
 <script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{ asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')}}"></script>

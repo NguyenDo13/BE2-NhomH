@@ -27,6 +27,7 @@
     <?php echo $__env->make('clients.modules.module-8', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-9', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-10', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php echo $__env->make('clients.modules.module-11', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->startSection('js'); ?>
 <script src="<?php echo e(asset('assets/clients/js/jquery-3.3.1.min.js')); ?>"></script>
 <script src="<?php echo e(asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')); ?>"></script>
