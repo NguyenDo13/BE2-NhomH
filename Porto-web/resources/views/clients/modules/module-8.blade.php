@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/8.css">
 </head>
 
-<body>
-  <div class="browse-categories">
+<body> --}}
+  <div class="module-8 browse-categories">
     <div class="container">
       <div class="heading-browse">
         <h2>
@@ -22,13 +22,13 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="module-8 container">
     <div id="slider">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-1.jpg" alt="">
+                <img src="{{asset('assets/clients/images/shop-cart-1.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>DRESS</h3>
                 <span>4 PRODUCT</span>
@@ -39,7 +39,7 @@
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-2.jpg" alt="">
+              <img src="{{asset('assets/clients/images/shop-cart-2.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>CLOTHING</h3>
                 <span>4 PRODUCT</span>
@@ -50,7 +50,7 @@
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-3.jpg" alt="">
+              <img src="{{asset('assets/clients/images/shop-cart-3.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>CAPS</h3>
                 <span>1 PRODUCT</span>
@@ -61,7 +61,7 @@
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-4.jpg" alt="">
+              <img src="{{asset('assets/clients/images/shop-cart-4.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>ACCESSORIES</h3>
                 <span>3 PRODUCT</span>
@@ -72,7 +72,7 @@
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-5.jpg" alt="">
+              <img src="{{asset('assets/clients/images/shop-cart-5.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>ELECTRONICS</h3>
                 <span>2 PRODUCT</span>
@@ -83,7 +83,7 @@
         <div class="item">
           <a href="">
             <div class="categories-slide">
-                <img src="images/shop-cart-6.jpg" alt="">
+              <img src="{{asset('assets/clients/images/shop-cart-6.jpg')}}" alt="">
               <div class="info-categories">
                 <h3>FASHION</h3>
                 <span>6 PRODUCT</span>
@@ -95,9 +95,9 @@
     </div>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
+  {{-- <script src="js/jquery-3.3.1.min.js"></script>
   <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-  <script src="js/8.js"></script>
-</body>
+  <script src="js/8.js"></script> --}}
+{{-- </body>
 
-</html>
+</html> --}}
