@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/clients/css/font-awesome.min.css') }}">
     <link href="{{ asset('assets/clients/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="{{ asset('assets/clients/css/style.css') }}">
 @endsection
 
@@ -29,8 +30,11 @@
     @include('clients.modules.module-10')
     @include('clients.modules.module-11')
 @section('js')
-<script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js')}}"></script>
-<script src="{{ asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')}}"></script>
-<script src="{{ asset('assets/clients/js/module-8.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/clients/js/module-8.js') }}"></script>
 @endsection
 @endsection
