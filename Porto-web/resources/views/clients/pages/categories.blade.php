@@ -20,6 +20,16 @@
 @endsection
 
 @section('body')
-@include('clients.modules.module-13')
-@include('clients.modules.module-15')
+<div class="container">
+    <div class="row">
+
+        @include('clients.modules.module-14')
+        @include('clients.modules.module-13')
+        @include('clients.modules.module-15')
+    </div>
+</div>
+@section('js')
+<script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{ asset('assets/clients/js/module-14.js')}}"></script>
+@endsection
 @endsection

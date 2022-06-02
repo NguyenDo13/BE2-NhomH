@@ -1,34 +1,34 @@
 
-*{margin: 0;padding: 0;font-family: Poppins, sans-serif;letter-spacing: -0.05em;}
-ul,ol{list-style: none;}
+.module-14 *{margin: 0;padding: 0;font-family: Poppins, sans-serif;letter-spacing: -0.05em;}
+.module-14 ul,ol{list-style: none;}
 a{text-decoration: none;}
 
-.sidebar-left .sidebar-menu h3{
+.module-14 .sidebar-left .sidebar-menu h3{
     font-size: 15px;
 }
-.sidebar-left {
+.module-14 .sidebar-left {
     border-radius: 5px;
     padding: 15px;
 }
-.sidebar-left .title-sidebar {
+.module-14.sidebar-left .title-sidebar {
     color: #333;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
     margin: 0 0 15px;
 }
-.sidebar-left .sidebar-menu .menu-categories{
+.module-14.sidebar-left .sidebar-menu .menu-categories{
     padding-left: 0;
 }
-.sidebar-left .sidebar-menu{
+.module-14 .sidebar-left .sidebar-menu{
     margin-bottom: 0;
     padding-left: 10px;
     list-style: none;
 }
-.sidebar-left .sidebar-menu li{
+.module-14 .sidebar-left .sidebar-menu li{
     display: block;
 }
-.sidebar-left .sidebar-menu li a{
+.module-14 .sidebar-left .sidebar-menu li a{
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -38,7 +38,7 @@ a{text-decoration: none;}
     position: relative;
     color: #777777;
 }
-.sidebar-left .sidebar-menu li a.categories{
+.module-14 .sidebar-left .sidebar-menu li a.categories{
     display: block;
     font-size: 16px;
     font-weight: 700;
@@ -48,18 +48,18 @@ a{text-decoration: none;}
     position: relative;
     color: #333;
 }
-.sidebar-left .sidebar-menu li a:hover{
+.module-14 .sidebar-left .sidebar-menu li a:hover{
     color: #4caf50;
 }
-.sidebar-left .sidebar-menu li ul{
+.module-14 .sidebar-left .sidebar-menu li ul{
     padding-left: 20px;
     list-style: none;
 }
-.sidebar-left .sidebar-menu li ul{
+.module-14 .sidebar-left .sidebar-menu li ul{
     list-style: none;
     display: none;
 }
-.sidebar-left .sidebar-menu li.has-child h3.icon {
+.module-14 .sidebar-left .sidebar-menu li.has-child h3.icon {
     content: 'f107';
     position: absolute;
     right: 0;
@@ -69,7 +69,7 @@ a{text-decoration: none;}
     background-size: 14px;
     transition: all 0.3s ease-in-out;
 }
-.sidebar-left .sidebar-menu li.has-child .icon {
+.module-14 .sidebar-left .sidebar-menu li.has-child .icon {
     content: '';
     position: absolute;
     right: 0;
@@ -80,26 +80,26 @@ a{text-decoration: none;}
     transition: all 0.3s ease-in-out;
 }
 
-.sidebar-left .sidebar-menu li.has-child.menu-open > a .icon{
+.module-14 .sidebar-left .sidebar-menu li.has-child.menu-open > a .icon{
     transform: rotate(180deg); /* Khi có class .menu-open thì xoay icon 180 độ */
 }
-.sidebar-left .sidebar-menu li.has-child.menu-open > ul{
+.module-14 .sidebar-left .sidebar-menu li.has-child.menu-open > ul{
     display: block; /* Khi có class .menu-open thì menu con kế tiếp hiển thị */
 }
 
-.card-price .price-left{
+.module-14 .card-price .price-left{
     position: relative;
     display: block;
     border-radius: 5px;
     padding: 15px 15px 15px 25px;
 }
-.card-price .price-left h3{
+.module-14 .card-price .price-left h3{
     font-family: Poppins, sans-serif;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: -0.05em;
 }
-.card-price .price-left a{
+.module-14 .card-price .price-left a{
     position: absolute;
     right: 11px;
     top: 12px;
@@ -109,13 +109,13 @@ a{text-decoration: none;}
     transition: all 0.3s ease-in-out;
     color: #333;
 }
-.range-slide {
+.module-14 .range-slide {
     position: relative;
     margin: 20px 18px 50px 10px;
     width: 250px;
   }
   
-  .slide {
+  .module-14 .slide {
     position: absolute;
     top: 0;
     height: 4px;
@@ -124,7 +124,7 @@ a{text-decoration: none;}
     right: 9px;
   }
   
-  .line {
+  .module-14 .line {
     position: absolute;
     left: 0;
     right: 0;
@@ -133,7 +133,7 @@ a{text-decoration: none;}
     background-color: #777777;
   }
   
-  .thumb {
+  .module-14 .thumb {
     position: absolute;
     z-index: 2;
     text-align: left;
@@ -147,7 +147,7 @@ a{text-decoration: none;}
     margin-left: -9px;
   }
   
-  input {
+  .module-14 input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
@@ -160,7 +160,7 @@ a{text-decoration: none;}
     margin: 0;
   }
   
-  input::-webkit-slider-thumb {
+  .module-14 input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     pointer-events: all;
@@ -170,15 +170,15 @@ a{text-decoration: none;}
     height: 18px;
   }
   
-  .display {
+  .module-14 .display {
     width: 240px;
     display: flex;
   }
-  .display span{
+  .module-14 .display span{
       font-size: 13px;
       color: #777777;
   }
-  .display .filter button.btn{
+  .module-14 .display .filter button.btn{
      font-size: 12px;
      font-weight: 700;
       border: none;
@@ -186,7 +186,7 @@ a{text-decoration: none;}
       width: 68px;
       height: 28px;
   }
-  .filter-color{
+  .module-14 .filter-color{
     display: block;
     margin: 3px 6px 3px 0;
     padding-right: 0!important;
@@ -197,17 +197,17 @@ a{text-decoration: none;}
     position: relative;
     text-align: left;
   }
-  .color-menu{
+  .module-14 .color-menu{
       margin-top: 15px;
       padding-left: 25px;
   }
-  .color-menu li{
+  .module-14 .color-menu li{
       position: relative;
   }
-  .color-menu li ul.menu-color{
+  .module-14 .color-menu li ul.menu-color{
     margin-top: 20px;
   }
-  .color-left .color-menu li a.list-color{
+  .module-14 .color-left .color-menu li a.list-color{
     font-family: Poppins, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -215,7 +215,7 @@ a{text-decoration: none;}
     color: #333;
   }
   
-  .color-left .color-menu li a.list-color i.icon{
+  .module-14 .color-left .color-menu li a.list-color i.icon{
     display: inline-block;
     color: #333;
     position: absolute;
@@ -224,7 +224,7 @@ a{text-decoration: none;}
     right: 20px;
   }
 /* CSS SIZE */
-.filter-sizes{
+.module-14 .filter-sizes{
     display: block;
     margin: 3px 6px 3px 0;
     padding-right: 0!important;
@@ -237,28 +237,28 @@ a{text-decoration: none;}
     text-align: center;
     border: 1px solid #e7e7e7;
   }
-  .filter-sizes:hover{
+  .module-14 .filter-sizes:hover{
       background-color: #0088cc;
       color: white;
   }
-  .sizes-menu{
+  .module-14 .sizes-menu{
       margin-top: 15px;
       padding-left: 25px;
   }
-  .sizes-menu li{
+  .module-14 .sizes-menu li{
       position: relative;
   }
-  .sizes-menu li ul.menu-sizes{
+  .module-14 .sizes-menu li ul.menu-sizes{
     margin-top: 20px;
   }
-  .sizes-left .sizes-menu li a.list-sizes{
+  .module-14 .sizes-left .sizes-menu li a.list-sizes{
     font-family: Poppins, sans-serif;
     font-weight: 700;
     letter-spacing: -0.05em;
     color: #333;
   }
   
-  .sizes-left .sizes-menu li a.list-sizes i.icon{
+  .module-14 .sizes-left .sizes-menu li a.list-sizes i.icon{
     display: inline-block;
     color: #333;
     position: absolute;

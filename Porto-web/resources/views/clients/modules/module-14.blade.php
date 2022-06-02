@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="css/14.css">
 </head>
 
-<body>
-  <div class="container">
+<body> --}}
+  <div class="module-14 container">
     <div class="row">
       <div class="col-md-3">
         <div class="card">
@@ -142,11 +142,11 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/14.js"></script>
 </body>
 
-</html>
+</html> --}}
