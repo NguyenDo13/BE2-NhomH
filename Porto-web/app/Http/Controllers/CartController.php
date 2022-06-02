@@ -8,8 +8,10 @@ use App\Models\Cart;//sử dụng để truy vấn data bằng eloquent
 use App\Models\cart_detail;
 use Illuminate\Support\Facades\DB;//sử dụng khi truy vấn data bằng Query Builder (DB::)
 
+session_start();
 class CartController extends Controller
 {
+    
     //dữ liệu dùng chung
     public $data = [];
     private $insert = ['2', '5', 'M', '4'];
@@ -36,33 +38,25 @@ class CartController extends Controller
         $this->data['cart_details'] = DB::table('cart_details')->get();
         return dd($this->data);
     }
-    //lấy toàn bộ dữ liệu bảng
-    public function get()
-    {
-        $this->data['carts'] = Cart::all();
-        $this->data['cart_details'] = cart_detail::all();
 
+    //add cart
+    public function addCart(){
+        //TODO: kiểm tra đăng nhập bằng session() xem id_user có tồn tại không?
+
+        //TODO: lấy id_user từ secsion
+        if(!isset($_SESSION['user_id'])){
+            return "hãy đăng nhập trước";
+        }
+        //TODO: lấy cart có id_user = session
+        $idUser = $_SESSION['id_user']; //đang null
+        $this->data['carts'] = Cart::where('id_user', $idUser)->get();
+        //idcart->cart_detail
+        foreach($this->data['carts'] as $item){
+            $idCart = $item['id'];
+        }
+        $this->data['details'] = cart_detail::where('id_cart', $idCart)->get();
+        //TODO: get all data
         return dd($this->data);
     }
-    //xóa toàn bộ dữ liệu bảng
-    public function remove()
-    {
-        $this->data['carts'] = Cart::all();
-        foreach($this->data['carts'] as $item){
-            $this->data['carts'] = DB::table('carts')->delete($item['id']);
-        }
-        return dd($this->data['carts']);
-    }
-    // sử cột id_product có id là 1
-    public function update()
-    {
-        $this->data['carts'] = DB::table('carts')->where('id', 1)->update(['id_product' => 6]);
-
-        return dd($this->data['carts']);
-    }
-
-    public function getToMany(){
-        $this->data['carts'] = Cart::getDetail();
-        return dd($this->data['carts']);
-    }
+    
 }
