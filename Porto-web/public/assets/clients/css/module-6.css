@@ -1,10 +1,6 @@
-.module-6 {
-  background-color: #fbfbfb;
-}
-
 .module-6 .pad-module {
-  padding: 40px;
-  /* margin: -20px; */
+  padding: 20px;
+  background-color: #fbfbfb;
 }
 
 
@@ -12,7 +8,6 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-size: 1.25em;
   letter-spacing: -0.04em;
   font-weight: 700;
   font-family: "Poppins",sans-serif;
