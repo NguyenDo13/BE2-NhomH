@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class cart_detail extends Model
 {
-    use HasFactory;
+    
 }

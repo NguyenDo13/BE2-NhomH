@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/get',[CartController::class, 'get']);
-Route::get('/init-data-cart',[CartController::class, 'initdata']);
+Route::get('/init',[CartController::class, 'initdata']);
 Route::get('/remove',[CartController::class, 'remove']);
 Route::get('/update',[CartController::class, 'update']);
 
