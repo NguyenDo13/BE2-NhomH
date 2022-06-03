@@ -1,27 +1,42 @@
-/* .module-15 .store-sort {
-    display: inline-block;
-} */
+.module-15 .clearfix {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-right: -10px;
+}
+
 .module-15 .store-grid {
-    float: right;
+    position: relative;
+    text-align: right;
+    margin-left: auto;
+}
+
+.module-15 .woocommerce-pagination {
+    position: relative;
+    text-align: right;
+    margin-left: auto;
 }
 
 .module-15 .store-grid li {
     display: inline-block;
-    width: 40px;
+    width: 20px;
     height: 40px;
     line-height: 40px;
     background-color: #FFF;
-    border: 1px solid #E4E7ED;
+    /* border: 1px solid #E4E7ED; */
     text-align: center;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
 
 .module-15 .store-grid li.active {
-    background-color: #2c62b2;
-    border-color: #2c62b2;
-    color: #FFF;
+    /* background-color: #2c62b2;
+    border-color: #2c62b2; */
+    /* color: #FFF; */
     cursor: default;
+    color: #2b9cd4;
+
 }
 
 .module-15 .store-pagination {
