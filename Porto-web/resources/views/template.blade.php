@@ -1,10 +1,10 @@
 <ul>
      @foreach ($data as $item)
           <li>
-               {{$item['id_cart']}}
+               {{$item['id']}}
           </li>
           <li>
-               {{$item['id_prod']}}
+               {{$item['id_user']}}
           </li>
           <li>
                {{$item['size']}}

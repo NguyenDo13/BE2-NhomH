@@ -56,35 +56,31 @@ class CartController extends Controller
         return dd($this->data);
     }
 
-    //update cart
-    public function updateCart()
+    //Delete cart
+    public function deleteCart()
     {
-        $idUser = 1;
+        //TODO check 1: check loginO 
         $count = 0;
-        $qty = 3;
-        $size = 'XL';
-        $idProd = 2;
+        //process DELETE
+        //1: get id_user
+        $idUser = 2; //for debugs
 
-        //check login or not
-        // if(null !== ($_SESSION('id_user'))){
-        //     return 'Go to Login';
-        // }
-        //check empty Cart
-        $Carts = Cart::where('id_user', $idUser)->get();
-        // dd($Carts);
+        //2: get id_cart
+        $Carts = Cart::where('id_user', $idUser)->get(); //get cart from id_user
         foreach ($Carts as $i) {
-            $count++;
             $idCart = $i['id'];
+            $count++;
         }
+        //check 2: check empty Cart
         if ($count <= 0) {
             return 'Your Cart must have products';
         }
 
-        //process update
-        //TODO 1:
-        $CartDetail = cart_detail::where('id_cart', $idCart)->update(['size' => $size, 'qty' => $qty]);
-        $CartDetail = cart_detail::where('id_cart', $idCart)->get();
+        //3: delete cart
+        $CartDetail = cart_detail::where('id_cart', $idCart)->delete();
 
+        //4: get all cart to check
+        $CartDetail = cart_detail::all();
 
         return view('template', ['data' => $CartDetail]);
     }
