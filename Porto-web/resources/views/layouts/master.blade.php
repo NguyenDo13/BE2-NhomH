@@ -13,7 +13,7 @@
 
 <body>
     @section('header')
-    <h1>include header here</h1>
+    <h1></h1>
     @show
     @section('body')
     <h1>custom body here</h1>

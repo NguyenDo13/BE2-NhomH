@@ -12,7 +12,7 @@
      opacity: 1;
 }
 
-.module-23 .title h4,
+.module-23 .title a,
 .module-23 .title i {
      font-size: 1.25rem;
      font-weight: 700;
@@ -20,10 +20,14 @@
 
 }
 
-.module-23 .title h4 {
+.module-23 .title a {
      font-family: 'Poppins', sans-serif;
 }
 
 .module-23 i {
      margin: 0 20 0 20;
+}
+
+.module-23 .title a:hover{
+     color: #0088cc;
 }

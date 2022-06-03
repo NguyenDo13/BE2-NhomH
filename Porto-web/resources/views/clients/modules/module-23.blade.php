@@ -1,9 +1,10 @@
 <div class="module-23">
-<div class="title">
-     <h4 class="name-cart">Shopping Cart</h4>
-     <i class="fa fa-angle-right"></i>
-     <h4>Checkout</h4>
-     <i class="fa fa-angle-right"></i>
-     <h4>Order Complete</h4>
-</div>
+    <div class="title">
+        <a href="" class="name-cart pe-3">Shopping Cart</a>
+        <i class="fa fa-angle-right me-3"></i>
+        <a  href="" class="pe-3">Checkout</a>
+        <i class="fa fa-angle-right me-3"></i>
+        <a href="">Order Complete</a>
+        <a ></a>
+    </div>
 </div>

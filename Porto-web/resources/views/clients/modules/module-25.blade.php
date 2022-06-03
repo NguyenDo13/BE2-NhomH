@@ -1,4 +1,4 @@
-<div class="module-25">
+<div class="module-25" style="margin-bottom: 120px">
      <table id="cart" style="width: 100%;">
           <thead>
                <tr>

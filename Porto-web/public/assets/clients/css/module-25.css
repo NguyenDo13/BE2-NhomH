@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
 
 .module-25 table {
-     font-family: Open Sans, sans-serif;
+     /* font-family: Open Sans, sans-serif; */
      font-size: 14px;
      line-height: 24px;
 }
@@ -164,4 +164,8 @@
 .module-25 .item-subtotal {
      font-size: 15px;
      font-weight: 500;
+}
+
+.module-25 .item-name a:hover{
+     color: #0088cc;
 }
