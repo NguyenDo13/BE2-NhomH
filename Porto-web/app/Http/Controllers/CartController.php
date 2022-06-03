@@ -30,6 +30,7 @@ class CartController extends Controller
             $this->insert[3] = rand(1, 5);
         }
     }
+
     //khởi tạo dữ liệu mẫu
     public function initData()
     {
@@ -56,12 +57,14 @@ class CartController extends Controller
         return dd($this->data);
     }
 
-    //Delete cart
+    //checkout
     public function deleteCart()
     {
-        //TODO check 1: check loginO 
+        //TODO check 1: check 
+        
         $count = 0;
-        //process DELETE
+        
+        //process CHECKOUT
         //1: get id_user
         $idUser = 2; //for debugs
 
@@ -71,17 +74,20 @@ class CartController extends Controller
             $idCart = $i['id'];
             $count++;
         }
+        
         //check 2: check empty Cart
         if ($count <= 0) {
             return 'Your Cart must have products';
         }
 
-        //3: delete cart
-        $CartDetail = cart_detail::where('id_cart', $idCart)->delete();
+        //3: checkout cart
+        $CartDetail = cart_detail::where('id_cart', $idCart)->get();
+        foreach ($CartDetail as $i) {
+            //add to order 
+            
+        }
 
-        //4: get all cart to check
-        $CartDetail = cart_detail::all();
-
+        cart_detail::where('id_cart', $idCart)->delete();
         return view('template', ['data' => $CartDetail]);
     }
 }
