@@ -2,6 +2,10 @@
     color: rgb(147, 146, 146);
 }
 
+.module-17 {
+    float: left;
+}
+
 .module-17 .checked {
     color: #ff5b5b;
 }
@@ -22,11 +26,6 @@
 
 }
 
-/* .not-available {
-    text-align: center;
-    line-height: 2em;
-} */
-
 .module-17 .black {
     background: #0f0f0f;
 }
@@ -38,14 +37,14 @@
 .module-17 .buttons_added {
     display: inline-flex;
 
-
 }
 
-.module-17 .border {
+/* .module-17 .border {
     padding: 10px 0px;
+    display: flex;
     border-top: 1px solid rgb(192, 189, 189);
 
-}
+} */
 
 .module-17 .is-form {
     overflow: hidden;
