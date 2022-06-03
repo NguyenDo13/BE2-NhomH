@@ -2,6 +2,7 @@
 
 .module-19 .pad-module {
   padding: 40px;
+  padding-bottom: 80px;
   /* margin: -20px; */
 }
 
@@ -9,9 +10,11 @@
 .module-19 .title-module h2 {
   /* display: flex; */
   /* align-items: center; */
+  margin-left: 12px;
+  margin-right: 12px;
   text-transform: uppercase;
   padding-bottom: 8px;
-  font-size: 1.25em;
+  font-size: 1.3rem;
   letter-spacing: -0.04em;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -152,6 +155,7 @@
 
 .module-19 .image-item {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .module-19 .price-item {
@@ -162,31 +166,31 @@
 
 
 
-.product:hover .image-item {
+.module-19 .product:hover .image-item {
   box-shadow: 0 25px 35px -5px rgb(0 0 0 / 10%);
 
 }
 
-.product:hover .btn-add-to-cart {
+.module-19 .product:hover .btn-add-to-cart {
   background: #0088cc;
   color: white;
 
 }
 
-.product:hover .btn-add-to-cart a {
+.module-19 .product:hover .btn-add-to-cart a {
   background: #0088cc;
   color: white;
   text-decoration: none;
 }
 
-.btn-add-to-cart:hover,
-.btn-add-to-cart:hover a {
+.module-19 .btn-add-to-cart:hover,
+.module-19 .btn-add-to-cart:hover a {
   background: #2b2b2d !important;
   color: white !important;
 
 }
 
-.add-to-wishlist {
+.module-19 .add-to-wishlist {
   /* margin-right: -12px; */
   visibility: hidden;
   opacity: 0;
@@ -194,7 +198,7 @@
   transition: visibility 0s, opacity 0.5s linear, transform 0.2s linear;
 }
 
-.quick-view {
+.module-19 .quick-view {
   /* margin-left: -12px; */
   visibility: hidden;
   opacity: 0;
@@ -202,14 +206,14 @@
   transition: visibility 0s, opacity 0.5s linear, transform 0.2s linear;
 }
 
-.product:hover .quick-view {
+.module-19 .product:hover .quick-view {
   visibility: visible;
   opacity: 2;
   /* margin-left: 0px; */
   transform: translate(6px);
 }
 
-.product:hover .add-to-wishlist {
+.module-19 .product:hover .add-to-wishlist {
   visibility: visible;
   opacity: 2;
   /* margin-right: 0px; */
