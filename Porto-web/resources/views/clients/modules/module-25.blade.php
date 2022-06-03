@@ -38,3 +38,19 @@
           </tbody>
      </table>
 </div>
+
+<p>IdUser: {{$idUser}}</p>
+<ul>
+     @foreach ($carts as $i)
+          <li>
+               {{$i['id_prod']}}
+          </li>
+          <li>
+               {{$i['size']}}
+          </li>
+          <li>
+               {{$i['qty']}}
+          </li>
+
+     @endforeach
+</ul>
