@@ -21,11 +21,13 @@ Route::get('/', function () {
 
 Route::get('/cart', [CartController::class, 'initData']);
 
+Route::get('/login', function(){
+    return view('clients.pages.login');
+});
+
 Route::get('/product', function () {
     return view('clients.pages.detail_product');
 });
 Route::get('/category', function () {
     return view('clients.pages.categories');
 });
-
-
