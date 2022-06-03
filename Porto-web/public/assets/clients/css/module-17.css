@@ -6,6 +6,15 @@
     float: left;
 }
 
+.module-17 .price::before {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 2px solid #e7e7e7;
+    margin: 1rem 0 1.25rem;
+
+}
+
 .module-17 .checked {
     color: #ff5b5b;
 }
@@ -21,7 +30,7 @@
 
 .module-17 .add:hover,
 .icon:hover {
-    background: #325793;
+    background: #0077b3;
     color: #fff;
 
 }
@@ -39,18 +48,17 @@
 
 }
 
-/* .module-17 .border {
-    padding: 10px 0px;
-    display: flex;
-    border-top: 1px solid rgb(192, 189, 189);
+.module-17 .qty {
+    padding-right: 10px;
 
-} */
+}
+
 
 .module-17 .is-form {
     overflow: hidden;
     position: relative;
     background-color: #f9f9f9;
-    height: 2.2rem;
+    height: 3rem;
     width: 1.9rem;
     padding: 0;
     text-shadow: 1px 1px 1px #fff;
@@ -64,17 +72,24 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.module-17 #add {
+    padding: 10px 0px;
+    border-top: 1px solid rgb(188, 186, 186);
+    border-bottom: 1px solid rgb(188, 186, 186);
+}
+
 .module-17 .is-form.minus {
-    border-radius: 4px 0 0 4px;
+
+    border: 1px solid 0;
 }
 
 .module-17 .is-form.plus {
-    border-radius: 0 4px 4px 0;
+    border: 1px solid 0;
 }
 
 .module-17 .input-qty {
     background-color: #fff;
-    height: 2.2rem;
+    height: 3rem;
     text-align: center;
     font-size: 1rem;
     display: inline-block;
@@ -94,8 +109,22 @@ input::-webkit-inner-spin-button {
     height: 2.2rem;
     border: none;
 
+
 }
 
 .module-17 a {
-    padding-right: 10px;
+    padding: 5px;
+
+}
+
+.module-17 #icon {
+    border-radius: 100%;
+    border: 2px solid rgb(211, 206, 206);
+    text-align: center;
+}
+
+.module-17 #icon:hover {
+    background: #4f4fa1;
+    color: white;
+    /* border-radius: 100%; */
 }
