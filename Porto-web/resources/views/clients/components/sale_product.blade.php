@@ -1,7 +1,7 @@
 <div class="module-6 products">
-     <div class="pad-module">
+     <div class="pad-module bg-white ">
           <div class="container text-center py-3 title-module">
-               <h2>Featured Products</h2>
+               <h2>Sale Products</h2>
           </div>
           <div class="container">
                <div class="row mx-auto">

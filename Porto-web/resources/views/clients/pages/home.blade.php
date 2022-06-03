@@ -24,6 +24,7 @@
     @include('clients.modules.module-4')
     @include('clients.modules.module-5')
     @include('clients.modules.module-6')
+    @include('clients.components.sale_product')
     @include('clients.modules.module-7')
     @include('clients.modules.module-8')
     @include('clients.modules.module-9')

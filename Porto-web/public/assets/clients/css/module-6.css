@@ -1,5 +1,6 @@
 .module-6 .pad-module {
   padding: 20px;
+  padding-bottom: 60px;
   background-color: #fbfbfb;
 }
 
@@ -8,6 +9,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  font-size: 1.3rem;
   letter-spacing: -0.04em;
   font-weight: 700;
   font-family: "Poppins",sans-serif;
@@ -157,6 +159,7 @@
 
 .module-6 .image-item {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .module-6 .price-item {

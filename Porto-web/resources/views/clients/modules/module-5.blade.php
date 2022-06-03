@@ -1,28 +1,30 @@
 
-<div class="module-5">
-     <div class="row">
-          <div class="col-md-4 icon-sections">
-               <img src="{{ asset('assets/clients/images/icon-car.png') }}" alt="">
-               <div>
-                    <h6 class="icon-title">FREE SHIPPING & RETURN</h6>
-                    <h6>Free shipping on all orders over $99.</h6>
+<div class="module-5 container" style="width: 90%">
+          <div class="row mt-4 mb-4" >
+               <div class="col-md-4 icon-sections">
+                    <img style="margin-right: 14px" src="{{ asset('assets/clients/images/icon-car.png') }}" alt="">
+                    <div>
+                         <h6 class="icon-title">FREE SHIPPING & RETURN</h6>
+                         <h6 class="sub-icon-title">Free shipping on all orders over $99.</h6>
+                    </div>
+               </div>
+               <div class="col-md-4 icon-sections">
+                    <img style="margin-right: 14px" src="{{ asset('assets/clients/images/icon-money.png') }}" alt="">
+                    <div>
+                         <h6 class="icon-title">MONEY BACK GUARANTEE</h6>
+                         <h6 class="sub-icon-title">100% money back guarantee</h6>
+                    </div>
+               </div>
+               <div class="col-md-4 icon-sections ">
+                    <img style="margin-right: 14px" src="{{ asset('assets/clients/images/icon-online.png') }}" alt="">
+                    <div>
+                         <h6 class="icon-title">ONLINE SUPPORT 24/7</h6>
+                         <h6 class="sub-icon-title">Lorem ipsum dolor sit amet.</h6>
+                    </div>
                </div>
           </div>
-          <div class="col-md-4 icon-sections ">
-               <img src="{{ asset('assets/clients/images/icon-money.png') }}" alt="">
-               <div>
-                    <h6 class="icon-title">MONEY BACK GUARANTEE</h6>
-                    <h6>100% money back guarantee</h6>
-               </div>
-          </div>
-          <div class="col-md-4 icon-sections ">
-               <img src="{{ asset('assets/clients/images/icon-online.png') }}" alt="">
-               <div>
-                    <h6 class="icon-title">ONLINE SUPPORT 24/7</h6>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
-               </div>
-          </div>
-     </div>
+
+     
 
 
      <div class="row">
