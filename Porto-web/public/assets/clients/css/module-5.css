@@ -8,7 +8,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     /* padding: 1rem 0; */
+     padding: 1rem 0;
      margin: 0;
      border-right: 1px solid #e7e7e7;
      margin-right: -2px;
@@ -173,3 +173,8 @@
      line-height: 0.75;
      font-weight: 700;
 }
+/* Owl Carousel */
+.module-5 .owl-carousel .owl-item img {
+     display: block;
+     width: 15%;
+ }

@@ -37,5 +37,6 @@
     <script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/clients/js/module-8.js') }}"></script>
+    <script src="{{ asset('assets/clients/js/module-5.js') }}"></script>
 @endsection
 @endsection

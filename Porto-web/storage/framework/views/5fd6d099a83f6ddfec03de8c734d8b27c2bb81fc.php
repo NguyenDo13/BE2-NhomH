@@ -37,6 +37,7 @@
     <script src="<?php echo e(asset('assets/clients/js/jquery-3.3.1.min.js')); ?>"></script>
     <script src="<?php echo e(asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')); ?>"></script>
     <script src="<?php echo e(asset('assets/clients/js/module-8.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/clients/js/module-5.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 

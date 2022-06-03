@@ -1,23 +1,23 @@
-$('.module-8 .owl-carousel').owlCarousel({
+$('.module-5 .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     autoplay:true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 9000,
     dots: false,
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
-            items: 5
+            items: 3
         }
     }
 })
-owl.data('.module-8 .owlCarousel').reinit({
+owl.data('.module-5 .owlCarousel').reinit({
     touchDrag  : true,
     mouseDrag  : true
 });

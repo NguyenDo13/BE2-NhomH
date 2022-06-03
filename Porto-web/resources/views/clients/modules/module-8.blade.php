@@ -29,7 +29,7 @@
           <a href="">
             <div class="categories-slide">
                 <img src="{{asset('assets/clients/images/shop-cart-1.jpg')}}" alt="">
-              <div class="info-categories">
+                <div class="info-categories">
                 <h3>DRESS</h3>
                 <span>4 PRODUCT</span>
               </div>
