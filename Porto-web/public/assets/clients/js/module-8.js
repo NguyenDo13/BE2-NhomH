@@ -17,4 +17,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+owl.data('owlCarousel').reinit({
+    touchDrag  : true,
+    mouseDrag  : true
+});
 

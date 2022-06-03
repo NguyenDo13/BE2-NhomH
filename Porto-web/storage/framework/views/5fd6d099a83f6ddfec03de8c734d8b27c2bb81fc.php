@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php echo e(asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('assets/clients/css/font-awesome.min.css')); ?>">
     <link href="<?php echo e(asset('assets/clients/css/bootstrap.min.css')); ?>" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="<?php echo e(asset('assets/clients/css/style.css')); ?>">
 <?php $__env->stopSection(); ?>
 
@@ -23,15 +24,19 @@
     <?php echo $__env->make('clients.modules.module-4', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-5', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-6', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php echo $__env->make('clients.components.sale_product', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-7', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-8', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-9', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-10', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('clients.modules.module-11', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->startSection('js'); ?>
-<script src="<?php echo e(asset('assets/clients/js/jquery-3.3.1.min.js')); ?>"></script>
-<script src="<?php echo e(asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')); ?>"></script>
-<script src="<?php echo e(asset('assets/clients/js/module-8.js')); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="<?php echo e(asset('assets/clients/js/jquery-3.3.1.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/clients/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/clients/js/module-8.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 
