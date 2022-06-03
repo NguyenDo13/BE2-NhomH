@@ -224,3 +224,19 @@
   transform: translate(-6px);
 
 }
+.module-6 .owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  font-size: 50px;
+  left: -30px;
+  top: 75px;
+  font-weight: 100;
+}
+
+.module-6 .owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  font-size: 50px;
+  right: -30px;
+  top: 75px;
+  font-weight: 100;
+}
+
