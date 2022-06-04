@@ -8,6 +8,7 @@ use App\Models\Cart; //sử dụng để truy vấn data bằng eloquent
 use App\Models\cart_detail;
 use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Query Builder (DB::)
 use SebastianBergmann\Template\Template;
+use Illuminate\Support\Facades\Mail;
 
 use function PHPUnit\Framework\isEmpty;
 
@@ -58,7 +59,7 @@ class CartController extends Controller
     }
 
     //checkout
-    public function deleteCart()
+    public function checkoutCart()
     {
         //TODO check 1: check 
         
@@ -89,5 +90,21 @@ class CartController extends Controller
 
         cart_detail::where('id_cart', $idCart)->delete();
         return view('template', ['data' => $CartDetail]);
+    }
+
+    //send Mail
+    public function sendMail(){
+        //get id_user->getname,email
+        $name = 'NTS';
+        $sendToEmail = 'sinhlop10a9@gmail.com';
+
+        //get id_order
+        $idOrder = 1;
+
+        Mail::send('emails.test', ['data' => $idOrder], function($email) use($name, $sendToEmail){
+            $email->subject('Porto - Your order is being processed');
+            $email->to($sendToEmail, $name);
+        });
+
     }
 }

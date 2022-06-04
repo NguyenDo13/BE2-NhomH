@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[CartController::class, 'checkoutCart']);
 Route::get('/init',[CartController::class, 'initdata']);
+Route::get('/send',[CartController::class, 'sendMail']);
 
 
 
