@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/cart', [CartController::class, 'initData']);
+Route::get('/cart', [CartController::class, 'initData'])->name('cart');
 
 Route::get('/login', function(){
     return view('clients.pages.login');

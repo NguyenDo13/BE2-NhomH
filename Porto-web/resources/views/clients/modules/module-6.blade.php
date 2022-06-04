@@ -38,7 +38,7 @@
                                         <i class="far fa-heart"></i>
                                    </div>
                                    <div class="btn-add-to-cart" style="width: 150px">
-                                        <a href="">
+                                        <a href="cart">
                                              <div><span class="material-symbols-outlined" style="font-size: 1.5em;">
                                                        shopping_bag
                                                   </span></div>Add to cart
@@ -76,7 +76,7 @@
                                         <i class="far fa-heart"></i>
                                    </div>
                                    <div class="btn-add-to-cart" style="width: 150px">
-                                        <a href="">
+                                        <a href="cart">
                                              <div><span class="material-symbols-outlined" style="font-size: 1.5em;">
                                                        shopping_bag
                                                   </span></div>Add to cart
@@ -118,7 +118,7 @@
                                         <i class="far fa-heart"></i>
                                    </div>
                                    <div class="btn-add-to-cart" style="width: 150px">
-                                        <a href="">
+                                        <a href="cart">
                                              <div><span class="material-symbols-outlined" style="font-size: 1.5em;">
                                                        shopping_bag
                                                   </span></div>Add to cart
@@ -160,7 +160,7 @@
                                         <i class="far fa-heart"></i>
                                    </div>
                                    <div class="btn-add-to-cart" style="width: 150px">
-                                        <a href="">
+                                        <a href="cart">
                                              <div><span class="material-symbols-outlined" style="font-size: 1.5em;">
                                                        shopping_bag
                                                   </span></div>Add to cart
