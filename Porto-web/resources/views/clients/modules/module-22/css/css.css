@@ -1,0 +1,21 @@
+.a{
+  text-decoration: none;
+  color: black;
+}
+.h3 a{
+  text-decoration: none;
+}
+.product-img{
+  position: relative;
+}
+.delete{
+  position: absolute;
+  top: -10px;
+  left: 90px;
+
+}
+.cart-btns a{
+  background: black;
+  color: white;
+  padding: 10px 30px;
+}
