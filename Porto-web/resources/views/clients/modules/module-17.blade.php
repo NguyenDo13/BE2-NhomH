@@ -1,6 +1,6 @@
 <div class="module-17">
     <div class="container">
-        <div class="col-md-7 " style="float: right;">
+        <div class="col-md-12 " style="float: right;">
             <div class="row">
                 <h3 class="product-title">Brown Women Casual HandBag</h3>
                 <div class="rating" style="display: flex;">
@@ -68,7 +68,11 @@
                         wishlist</span></a>
 
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    @include('clients.modules.module-18')
+                </div>
+            </div>
         </div>
-
     </div>
 </div>
