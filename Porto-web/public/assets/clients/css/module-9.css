@@ -1,0 +1,116 @@
+/*Module 9 -Tai Em*/
+
+.module-9 .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.module-9 .portoTopicon {
+    padding-left: 150px;
+    margin-bottom: 12px;
+}
+
+.module-9 .porto-icon {
+    color: #0088cc;
+    background: transparent;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    border-radius: 40px;
+    font-size: 40px;
+}
+
+.module-9 .portoheader {
+    text-align: center;
+}
+
+.module-9 .portodescription {
+    text-align: center;
+}
+
+.module-9 .porto-siscon-top {
+    text-align: center;
+}
+
+.module-9 .textop {
+    color: #fff !important;
+}
+
+.module-9 .custom_heading {
+    font-weight: bolder;
+}
+
+.module-9 .btn-modern {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .01em;
+}
+
+.module-9 .btn-quaternary {
+    background-color: #0e0f11;
+    border-color: #0e0f11 #0e0f11 #000;
+}
+
+.module-9 .btn {
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+}
+
+.module-9 .textviewsale {
+    border-radius: 0;
+    font-size: 15px !important;
+}
+
+.module-9 .btn:hover {
+    color: white;
+}
+
+.module-9 .coupon-sale-light-bg b {
+    background: #fff !important;
+    color: #222529 !important;
+}
+
+.module-9 .coupon-sale-text b {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 5px 8px;
+}
+
+.module-9 .heading-light,
+.module-9 .lnk-light,
+.module-9 .text-color-light {
+    color: #ffffff!important;
+}
+
+.module-9 .coupon-sale-text {
+    transform: rotate( -2deg);
+    letter-spacing: -.01em;
+    position: relative;
+}
+
+.module-9 .coupon-sale-text b {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 5px 8px;
+    background-color: #ff7272;
+    color: #fff;
+}
+
+.module-9 .coupon-sale-text i {
+    font-style: normal;
+    position: absolute;
+    left: -2.25em;
+    top: 50%;
+    transform: translateY(-50%) rotate( -90deg);
+    font-size: .65em;
+    opacity: .6;
+    letter-spacing: 0;
+}
