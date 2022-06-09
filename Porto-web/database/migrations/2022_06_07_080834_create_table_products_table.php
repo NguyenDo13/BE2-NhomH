@@ -19,7 +19,11 @@ class CreateTableProductsTable extends Migration
             $table->string('name'); // cột name có kiểu là varchar và giới hạn là 150 ký tự
             $table->integer('price'); // cột price có kiểu là integer
             $table->string('image', 255); // cột image có kiểu là varchar và giới hạn là 255 ký tự
-            $table->text('description'); // cột description có kiểu là text và có thể để NULL
+            $table->integer('feature'); // cột description có kiểu là text và có thể để NULL
+            $table->text('description');
+            $table->integer('manufacture_id');
+            $table->integer('type_id');
+            $table->integer('comment_id');
             $table->timestamps(); // cột thể hiện timestamps mặc định
         });
     }
