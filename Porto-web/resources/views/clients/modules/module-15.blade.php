@@ -6,7 +6,7 @@
 
 
             <!-- STORE -->
-            <div id="store" class="col-md-9" style="float:right ;">
+            <div id="store" class="" style="float:right ;">
                 <!-- store top filter -->
                 <div class="store-filter clearfix">
                     <div class="store-sort">
