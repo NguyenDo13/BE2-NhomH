@@ -22,7 +22,7 @@ class CreateTableProductsTable extends Migration
             $table->text('description');
             $table->integer('qty');
             $table->integer('feature'); // cột description có kiểu là text và có thể để NULL
-            $table->integer('sale');
+            $table->string('sale');
             $table->integer('tag_id');
             $table->timestamps(); // cột thể hiện timestamps mặc định
         });
