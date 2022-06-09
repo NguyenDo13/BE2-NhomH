@@ -4,7 +4,7 @@
     <div class="container">
         <div class="col-md-12 " style="float: right;">
             <div class="row">
-                
+
                 <h3 class="product-title">{{$detail->name}}</h3>
                 
                 <div class="rating" style="display: flex;">

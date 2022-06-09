@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/category', [ProductController::class, 'ShowAllProduct']);
 Route::get('/', function () {
     return view('clients.pages.home');
 });
@@ -27,12 +28,12 @@ Route::get('/login', function(){
 });
 // Product detail
 Route::get('/product/{id}', [ProductController::class, 'getProductById']);
-
+// Product->category
 Route::get('/product', function () {
     return view('clients.pages.detail_product');
 });
-Route::get('/category', function () {
-    return view('clients.pages.categories');
-});
+// Route::get('/category', function () {
+//     return view('clients.pages.categories');
+// });
 Route::get('/', [ProductController::class, 'ShowFeatureProduct']);
 

@@ -42,15 +42,10 @@ class ProductController extends Controller
         return view('producttype', ['productType' => $product]);
     }
 
-
-
-    
-
-
     function ShowAllProduct()
     {
-        $Product = Product::all();
-        return view('shopcontent', compact("Product"));
+        $Product = Product::paginate(3);
+        return view('clients.pages.categories', compact("Product"));
     }
     function ShowFeatureProduct()
     {
