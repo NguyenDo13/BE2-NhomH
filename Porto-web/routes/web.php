@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/get',[CartController::class, 'get']);
-Route::get('/init',[CartController::class, 'initdata']);
-Route::get('/remove',[CartController::class, 'remove']);
 Route::get('/update',[CartController::class, 'updateCart']);
 
+
+Route::get('/cart', [CartController::class, 'showCart'])->name('cart');
 
 
