@@ -1,0 +1,130 @@
+.module-17 .review {
+    color: rgb(147, 146, 146);
+}
+
+.module-17 {
+    float: left;
+}
+
+.module-17 .price::before {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 2px solid #e7e7e7;
+    margin: 1rem 0 1.25rem;
+
+}
+
+.module-17 .checked {
+    color: #ff5b5b;
+}
+
+.module-17 .color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 1.5em;
+    width: 1.5em;
+
+}
+
+.module-17 .add:hover,
+.icon:hover {
+    background: #0077b3;
+    color: #fff;
+
+}
+
+.module-17 .black {
+    background: #0f0f0f;
+}
+
+.module-17 .blue {
+    background: #0076ad;
+}
+
+.module-17 .buttons_added {
+    display: inline-flex;
+
+}
+
+.module-17 .qty {
+    padding-right: 10px;
+
+}
+
+
+.module-17 .is-form {
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    height: 3rem;
+    width: 1.9rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #ddd;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.module-17 #add {
+    padding: 10px 0px;
+    border-top: 1px solid rgb(188, 186, 186);
+    border-bottom: 1px solid rgb(188, 186, 186);
+}
+
+.module-17 .is-form.minus {
+
+    border: 1px solid 0;
+}
+
+.module-17 .is-form.plus {
+    border: 1px solid 0;
+}
+
+.module-17 .input-qty {
+    background-color: #fff;
+    height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+
+.module-17 .add {
+
+    background: #0f0f0f;
+    color: white;
+    height: 2.2rem;
+    border: none;
+
+
+}
+
+.module-17 a {
+    padding: 5px;
+
+}
+
+.module-17 #icon {
+    border-radius: 100%;
+    border: 2px solid rgb(211, 206, 206);
+    text-align: center;
+}
+
+.module-17 #icon:hover {
+    background: #4f4fa1;
+    color: white;
+    /* border-radius: 100%; */
+}
