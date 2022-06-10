@@ -13,7 +13,7 @@
                                         <div class="onhot"><span>Hot</span></div>
                                         <div class="onsale"><span>-19%</span></div>
                                    </div>
-                                   <img class="" style="width: 100%; height:100%" src="{{ asset('assets/clients/images/'.$feature->image) }}" alt="">
+                                   <a href="{{ url('product/'.$feature->id)}}"><img class="" style="width: 100%; height:100%" src="{{ asset('assets/clients/images/'.$feature->image) }}" alt=""></a>
                               </div>
                             
                                    
