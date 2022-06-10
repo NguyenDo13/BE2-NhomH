@@ -11,12 +11,12 @@ use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
+    public $data = [];
     public function __construct()
     {
 
     }
     // function index()
-    // {
     //     $product = Product::all();
 
     //     $product_type = Product_type::all();
@@ -26,7 +26,6 @@ class ProductController extends Controller
     // }
     function page($name = "/")
     {
-
         $product = Product::all();
         return view($name, ['data' => $product]);
     }
@@ -41,16 +40,22 @@ class ProductController extends Controller
         $product = Product::where('type_id', $id)->get();
         return view('producttype', ['productType' => $product]);
     }
-
-    function ShowAllProduct()
-    {
-        $Product = Product::paginate(3);
-        return view('clients.pages.categories', compact("Product"));
-    }
     function ShowFeatureProduct()
     {
         $Product = Product::where('feature', 1)->get();
         return view('clients.pages.home', compact("Product"));
+    }
+
+    function getSaleProduct(){
+        $products_sale = Product::all()->toArray();
+        $this->data['products_sale'] = [];
+        foreach($products_sale as $item){
+            if($item['sale'] > 0){
+                array_push($this->data['products_sale'], $item);
+            }
+        }
+        // dd($this->data['products_sale']);
+        return view('clients.pages.home', $this->data); 
     }
    
 

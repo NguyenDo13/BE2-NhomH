@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Models\cart_detail;
 use App\Models\Product;
+use Illuminate\Contracts\Session\Session;
+
 use function PHPUnit\Framework\isEmpty;
 
 class CartController extends Controller
@@ -18,6 +20,18 @@ class CartController extends Controller
 
     //dữ liệu dùng chung
     public $data = [];
+
+    //add cart
+    public function addCart($id){
+        $idUser = Session::get('customer_id');
+        // $idUser = 1;
+        $idCart = Cart::where('id_user', $idUser)->value('id');
+        DB::table('cart_details')->insert([
+            ['id_cart' => $idCart, 'id_prod' => $id, 'size' => 'M' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
+        ]);
+        $this->data['details'] = cart_detail::where('id_cart', $idCart)->get();
+        return redirect()->route('show_cart');
+    }
     //Delete cart
     public function deleteCart($id)
     {
@@ -27,18 +41,11 @@ class CartController extends Controller
         $count = 0;
         //process DELETE
         //1: get id_user
-        $idUser = 1; //for debugs
+        // $idUser = Session::get('customer_id'); 
+        $idUser = 1; 
 
         //2: get id_cart
         $id_Carts = Cart::where('id_user', $idUser)->value('id'); //get cart from id_user
-        // foreach ($Carts as $i) {
-        //     $idCart = $i['id'];
-        //     $count++;
-        // }
-        //check 2: check empty Cart
-        // if ($count <= 0) {
-        //     return 'Your Cart must have products';
-        // }
 
         //3: delete cart
         $CartDetail = cart_detail::where('id_cart', $id_Carts)->where('id_prod', $id)->delete();
@@ -113,7 +120,7 @@ class CartController extends Controller
         //all data cart
 
         // return dd($this->data['carts']);
-        return view('clients.pages.carts', $this->data);
+        return redirect()->route('show_cart');
     }
 
     //checkout
@@ -126,7 +133,7 @@ class CartController extends Controller
         //process CHECKOUT
         //1: get id_user
         $idUser = 1; //for debugs
-        
+        // $idUser = Session::get('customer_id');
 
         //2: get id_cart
         $id_Carts = Cart::where('id_user', $idUser)->value('id');
@@ -151,27 +158,6 @@ class CartController extends Controller
 
         //get id_order
         $idOrder = 1;
-
-        // //get id_user
-        // $idUser = 1;
-        // $this->data['idUser'] = $idUser;
-
-        // //get id_cart
-        // $this->data['id_cart'] = Cart::where('id_user', $idUser)->value('id');
-
-        // //kiem tra
-        // if($this->data['id_cart'] == null){
-        //     return 'user khong ton tai';
-        // }
-
-        // //get cart
-        // $this->data['carts'] = cart_detail::where('id_Cart', $this->data['id_cart'])->get()->toArray();
-        // $this->data['products'] = [];
-        // //get list prod
-        // foreach ($this->data['carts'] as $item) {  
-        //     $Product = Product::where('id', $item['id_prod'])->get()->toArray();
-        //     array_push($this->data['products'], $Product);
-        // }
 
 
         Mail::send('layouts.emails.sendEmail', ['data' => $idOrder], function($email) use($name, $sendToEmail){

@@ -9,7 +9,7 @@
                 <th style="width:17.5%" class="subtotal"><span>Subtotal</span></th>
             </tr>
         </thead>
-        <form method="POST" action="/update">
+        <form method="POST" action="/cart/update">
             <input type="hidden" name="_method" value="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <tbody>
@@ -57,7 +57,7 @@
                 <tr>
                     <td colspan="4" class="hidden-xs"> </td>
                     <td>
-                        <button href="{{ route('update_cart') }}" class="btn btn-warning" type="submit">Update
+                        <button href="" class="btn btn-warning" type="submit">Update
                             Cart </button>
                     </td>
 
