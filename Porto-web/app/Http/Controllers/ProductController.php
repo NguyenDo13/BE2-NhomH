@@ -44,7 +44,7 @@ class ProductController extends Controller
 
     function ShowAllProduct()
     {
-        $Product = Product::paginate(3);
+        $Product = Product::simplePaginate(3);
         return view('clients.pages.categories', compact("Product"));
     }
     function ShowFeatureProduct()

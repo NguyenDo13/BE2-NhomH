@@ -1,7 +1,7 @@
 <div class="module-15">
     <div class="section">
         <!-- container -->
-        <div class="container">
+        <div class="">
 
 
 
@@ -170,19 +170,15 @@
 
                         </div>
                         <nav class="woocommerce-pagination">
-                            <form class="woocommerce-viewing" method="get">
-                                
-                                <ul class="store-pagination">
-                                    
+                            <form class="woocommerce-viewing" method="get">                               
+                                <ul class="store-pagination">       
                                     <li class="active">{{ $Product->links() }}</li>
-                                    
                                 </ul>
                                 <input type="hidden" name="paged" value="" />
 
                             </form>
 
                         </nav>
-
                     </div>
                     <!-- /store bottom filter -->
                 </div>
