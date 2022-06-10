@@ -24,6 +24,9 @@ Route::get('/', function () {
 
 
 Route::get('/cart', [CartController::class, 'initData'])->name('cart');
+Route::get('/add', [CartController::class, 'add']);
+Route::get('/update', [CartController::class, 'update']);
+Route::get('/remove', [CartController::class, 'remove']);
 
 Route::get('/login', function () {
     return view('clients.pages.login');
