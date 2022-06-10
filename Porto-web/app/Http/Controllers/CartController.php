@@ -115,4 +115,8 @@ class CartController extends Controller
         // return dd($this->data['carts']);
         return view('clients.pages.carts', $this->data);
     }
+    // public function getToMany(){
+    //     $this->data['carts'] = Cart::getDetail();
+    //     return dd($this->data['carts']);
+    // }
 }
