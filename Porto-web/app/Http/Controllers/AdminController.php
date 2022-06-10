@@ -9,13 +9,14 @@ use App\Models\Login;
 use App\Models\UserSocial;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
 
     public function login_google()
     {
-        config(['services.google.redirect'=>env('GOOGLE_CLIENT_URL')]);
+        config(['services.google.redirect' => env('GOOGLE_CLIENT_URL')]);
         return Socialite::driver('google')->redirect();
     }
     public function callback_google()
@@ -28,15 +29,13 @@ class AdminController extends Controller
             Session::put('customer_id', $account_name->customer_id);  # code...
             Session::put('customer_name', $account_name->customer_name);
             Session::put('customer_picture', $account_name->customer_picture);
-
         } elseif ($customer_new) {
             $account_name = Login::where('customer_id', $authUser->user)->first();
             Session::put('customer_id', $account_name->customer_id);  # code...
             Session::put('customer_name', $account_name->customer_name);
             Session::put('customer_picture', $account_name->customer_picture);
-
         }
-        return redirect('/home')->with('message', 'Đăng nhập Admin thành công');
+        return redirect('/home')->with('message', 'Đăng nhập thành công');
     }
     public function findOrCreateUser($users, $provider)
     {
@@ -58,7 +57,7 @@ class AdminController extends Controller
                 $orang = Login::create([
                     'customer_name' => $users->name,
                     'customer_email' => $users->email,
-                    'customer_password' => '',
+                    'customer_password' => Str::random(10),
                     'customer_picture' => $users->avatar,
                 ]);
             }
