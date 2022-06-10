@@ -38,7 +38,8 @@
                                     class="control-input">
                                 <label class="label-control no-radius" for="rememberme">Remember me</label>
                             </div>
-                            <a href="{{ url('login-custom-google') }}" class="text-v-dark font-weight-semibold">Login by Gmail</a>
+                            <a href="{{ url('/login-google') }}" class="text-v-dark font-weight-semibold">Login by
+                                gmail</a>
                         </div>
                         <p class="form-row mb-3 mb-lg-0 pb-1 pb-lg-0">
                             <input type="hidden" id="login-btn" name="login-btn" value="ca1cd3182f" /><input
