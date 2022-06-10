@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/update',[CartController::class, 'updateCart']);
+Route::post('/update',[CartController::class, 'updateCart'])->name('update_cart');
 
 
-Route::get('/cart', [CartController::class, 'showCart'])->name('cart');
+Route::get('/cart', [CartController::class, 'showCart'])->name('show_cart');
 
 

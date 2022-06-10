@@ -19,36 +19,47 @@ class CartController extends Controller
     public $data = [];
     
     //update cart
-    public function updateCart()
+    public function updateCart(Request $request)
     {
-        $idUser = 1;
         $count = 0;
-        $qty = 3;
-        $size = 'XL';
-        $idProd = 2;
+        
+        // $size = 'XL';
 
+        // if(isEmpty($request)){
+        //     return dd($request);
+        // }
         //check login or not
         // if(null !== ($_SESSION('id_user'))){
         //     return 'Go to Login';
         // }
-        //check empty Cart
-        $Carts = Cart::where('id_user', $idUser)->get();
-        // dd($Carts);
-        foreach ($Carts as $i) {
-            $count++;
-            $idCart = $i['id'];
-        }
-        if ($count <= 0) {
-            return 'Your Cart must have products';
-        }
+
+        // //check empty Cart
+        // $Carts = Cart::where('id_user', $idUser)->get();
+        // // dd($Carts);
+        // foreach ($Carts as $i) {
+        //     $count++;
+        //     $idCart = $i['id'];
+        // }
+        // if ($count <= 0) {
+        //     return 'Your Cart must have products';
+        // }
 
         //process update
-        //TODO 1:
-        $CartDetail = cart_details::where('id_cart', $idCart)->update(['size' => $size, 'qty' => $qty]);
-        $CartDetail = cart_details::where('id_cart', $idCart)->get();
+        //TODO 1:f
+        foreach($request['id'] as $item){
+            // echo $item;
+            cart_details::where('id_prod', $item)->update(['qty' => $request['qty'][$count]]);
+            $count++;
+        }
+        // $CartDetail = 
+        // $CartDetail = cart_details::where('id_cart', $idCart)->update(['qty' => $qty]);
+        // $CartDetail = cart_details::where('id_cart', $idCart)->get();
 
 
-        return view('template', ['data' => $CartDetail]);
+        // return view('template', ['data' => $CartDetail]);
+        // return dd($CartDetail);
+        
+        return redirect()->route('show_cart');
     }
     
     public function showCart(){
@@ -57,15 +68,15 @@ class CartController extends Controller
         $this->data['idUser'] = $idUser;
 
         //get id_cart
-        $idCart = Cart::where('id_user', $idUser)->value('id');
+        $this->data['id_cart'] = Cart::where('id_user', $idUser)->value('id');
 
         //kiem tra
-        if($idCart == null){
+        if($this->data['id_cart'] == null){
             return 'user khong ton tai';
         }
 
         //get cart
-        $this->data['carts'] = cart_details::where('id_Cart', $idCart)->get()->toArray();
+        $this->data['carts'] = cart_details::where('id_Cart', $this->data['id_cart'])->get()->toArray();
         $this->data['products'] = [];
         //get list prod
         foreach ($this->data['carts'] as $item) {  
