@@ -126,27 +126,20 @@ class CartController extends Controller
         //process CHECKOUT
         //1: get id_user
         $idUser = 1; //for debugs
+        
 
         //2: get id_cart
-        $Carts = Cart::where('id_user', $idUser)->get(); //get cart from id_user
-        foreach ($Carts as $i) {
-            $idCart = $i['id'];
-            $count++;
-        }
+        $id_Carts = Cart::where('id_user', $idUser)->value('id');
         
-        //check 2: check empty Cart
-        // if ($count <= 0) {
-        //     return 'Your Cart must have products';
-        // }
 
         //3: checkout cart
-        $CartDetail = cart_detail::where('id_cart', $idCart)->get();
+        $CartDetail = cart_detail::where('id_cart', $id_Carts)->get()->toArray();
         foreach ($CartDetail as $i) {
             //add to order 
             
         }
 
-        cart_detail::where('id_cart', $idCart)->delete();
+        cart_detail::where('id_cart', $id_Carts)->delete();
         return view('template', ['data' => $CartDetail]);
     }
 
