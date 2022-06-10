@@ -51,7 +51,7 @@
                     </form>
                 </div>
                 <div class="u-column2 col-2">
-                    <form action="" class="formSignin">
+                    <form action="{{ url('/recover-pass') }}" class="formSignin">
                         <h3 class="title-login"> Register </h3>
                         <p class="titleinput-login">
                             <label class="mb-1 font-weight-medium" for="username">Email address&nbsp;

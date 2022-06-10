@@ -19,6 +19,7 @@ class TblCustomers extends Migration
             $table->string('customer_password');
             $table->string('customer_name');
             $table->string('customer_picture');
+            $table->string('customer_token')->nullable();
         });
     }
 

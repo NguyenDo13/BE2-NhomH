@@ -60,6 +60,7 @@ class AdminController extends Controller
                     'customer_email' => $users->email,
                     'customer_password' => '',
                     'customer_picture' => $users->avatar,
+                    'customer_token' => '',
                 ]);
             }
             $customer_new->login_customer_google()->associate($orang);

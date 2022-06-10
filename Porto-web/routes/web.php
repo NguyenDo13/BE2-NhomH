@@ -43,3 +43,10 @@ Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
 Route::get('/home', function () {
     return view('clients.pages.home');
 });
+
+//Register send mail
+Route::get('/register', function () {
+    return view('clients.pages.register');
+});
+
+Route::get('/recover-pass', [MailController::class, 'recover_pass']);
