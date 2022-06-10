@@ -8,6 +8,7 @@ use App\Models\Cart; //sử dụng để truy vấn data bằng eloquent
 use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Query Builder (DB::)
 use SebastianBergmann\Template\Template;
 use App\Models\cart_detail;
+use Illuminate\Contracts\Session\Session;
 use App\Models\Product;
 use function PHPUnit\Framework\isEmpty;
 
@@ -18,6 +19,24 @@ class CartController extends Controller
     //dữ liệu dùng chung
     public $data = [];
 
+    //add cart
+    public function addCart($id){
+        //TODO: lấy cart có id_user = session
+        $idUser = Session::get('customer_id');
+        // $idUser = 1;
+        $idCart = Cart::where('id_user', $idUser)->value('id');
+        // dd($idCart);
+        //idcart->cart_detail
+        // foreach($this->data['carts'] as $item){
+        //     $idCart = $item['id'];
+        // }
+        DB::table('cart_details')->insert([
+            ['id_cart' => $idCart, 'id_prod' => $id, 'size' => 'M' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
+        ]);
+        $this->data['details'] = cart_detail::where('id_cart', $idCart)->get();
+        //TODO: get all data
+        return dd($this->data);
+    }
     //Delete cart
     public function deleteCart($id)
     {
