@@ -62,7 +62,7 @@ class ProductController extends Controller
                 array_push($this->data['products_sale'], $item);
             }
         }
-
+        // dd($this->data['products_sale']);
         return view('clients.pages.home', $this->data); 
     }
    

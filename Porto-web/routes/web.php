@@ -19,10 +19,8 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', [ProductController::class, 'getSaleProduct']);
-Route::get('/', function () {
-    return view('clients.pages.home');
-});
+
+
 
 
 Route::get('/cart', [CartController::class, 'initData'])->name('cart');
@@ -45,6 +43,4 @@ Route::get('/category', function () {
 Route::get('/login-google', [AdminController::class, 'login_google']);
 Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
 
-Route::get('/home', function () {
-    return view('clients.pages.home');
-});
+Route::get('/', [ProductController::class, 'getSaleProduct']);
