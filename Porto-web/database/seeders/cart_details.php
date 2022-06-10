@@ -15,15 +15,15 @@ class cart_details extends Seeder
     public function run()
     {
         DB::table('cart_details')->insert([
-            ['id_cart' => 1, 'id_prod' => 1, 'size' => 'M' , 'qty' => 2, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 1, 'id_prod' => 2, 'size' => 'M' , 'qty' => 4, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 1, 'id_prod' => 3, 'size' => 'S' , 'qty' => 6, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 2, 'id_prod' => 1, 'size' => 'M' , 'qty' => 3, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 2, 'id_prod' => 3, 'size' => 'XL' , 'qty' => 4, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 3, 'id_prod' => 3, 'size' => 'S' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 4, 'id_prod' => 1, 'size' => 'L' , 'qty' => 2, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 4, 'id_prod' => 2, 'size' => 'M' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_cart' => 4, 'id_prod' => 3, 'size' => 'M' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
+            ['id_cart' => 1, 'id_prod' => 1, 'size' => 'M' , 'qty' => 2],
+            ['id_cart' => 1, 'id_prod' => 2, 'size' => 'M' , 'qty' => 4],
+            ['id_cart' => 1, 'id_prod' => 3, 'size' => 'S' , 'qty' => 6],
+            ['id_cart' => 2, 'id_prod' => 1, 'size' => 'M' , 'qty' => 3],
+            ['id_cart' => 2, 'id_prod' => 3, 'size' => 'XL' , 'qty' => 4],
+            ['id_cart' => 3, 'id_prod' => 3, 'size' => 'S' , 'qty' => 1],
+            ['id_cart' => 4, 'id_prod' => 1, 'size' => 'L' , 'qty' => 2],
+            ['id_cart' => 4, 'id_prod' => 2, 'size' => 'M' , 'qty' => 1],
+            ['id_cart' => 4, 'id_prod' => 3, 'size' => 'M' , 'qty' => 1],
         ]);
     }
 }

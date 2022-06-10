@@ -19,8 +19,6 @@ class CreateCartDetailsTable extends Migration
             $table->text('size');
             $table->integer('qty');
             $table->timestamps();
-            $table->softDeletes();
-
         });
     }
 

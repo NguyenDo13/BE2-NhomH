@@ -15,11 +15,11 @@ class carts extends Seeder
     public function run()
     {
         DB::table('carts')->insert([
-            ['id_user' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_user' => 2, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_user' => 3, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_user' => 4, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
-            ['id_user' => 5, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
+            ['id_user' => 1],
+            ['id_user' => 2],
+            ['id_user' => 3],
+            ['id_user' => 4],
+            ['id_user' => 5],
         ]);
     }
 }
