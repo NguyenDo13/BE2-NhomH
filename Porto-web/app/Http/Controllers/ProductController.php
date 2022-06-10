@@ -15,15 +15,15 @@ class ProductController extends Controller
     {
 
     }
-    function index()
-    {
-        $product = Product::all();
+    // function index()
+    // {
+    //     $product = Product::all();
 
-        $product_type = Product_type::all();
-        $Productbs = Product::orderby('sale_amount', 'ASC')->limit(10)->get();
-        $Productnew = Product::orderby('id', 'DESC')->limit(10)->get();
-        return view('main', ['data' => $product, 'datatype' => $product_type, 'bs' => $Productbs, 'new' => $Productnew]);
-    }
+    //     $product_type = Product_type::all();
+    //     $Productbs = Product::orderby('sale_amount', 'ASC')->limit(10)->get();
+    //     $Productnew = Product::orderby('id', 'DESC')->limit(10)->get();
+    //     return view('main', ['data' => $product, 'datatype' => $product_type, 'bs' => $Productbs, 'new' => $Productnew]);
+    // }
     function page($name = "/")
     {
 
