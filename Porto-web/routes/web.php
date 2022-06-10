@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[CartController::class, 'checkoutCart']);
-Route::get('/init',[CartController::class, 'initdata']);
-Route::get('/send',[CartController::class, 'sendMail']);
 
-
-
+Route::prefix('/cart')->group(function () {
+    Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
+    Route::get('/delete/{id}', [CartController::class, 'deleteCart'])->name('delete_cart');
+    Route::post('/update', [CartController::class, 'updateCart'])->name('update_cart');
+    Route::get('/checkout', [CartController::class, 'checkoutCart']);
+    Route::get('/send', [CartController::class, 'sendMail']);
+});

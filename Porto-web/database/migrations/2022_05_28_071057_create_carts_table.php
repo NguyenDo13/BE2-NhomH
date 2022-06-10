@@ -17,6 +17,7 @@ class CreateCartsTable extends Migration
             $table->increments('id');
             $table->integer('id_user');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
