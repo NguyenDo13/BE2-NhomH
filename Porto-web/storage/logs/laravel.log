@@ -13542,3 +13542,213 @@ esources\\views/clients/pages/login.blade.php(20): Illuminate\\View\\View->rende
 #37 D:\\Luu Tru Tai Lieu\\HK4\\BE2-NhomH\\Porto-web\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #38 {main}
 "} 
+[2022-06-10 12:03:25] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:25] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:26] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:26] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:28] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:28] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:29] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:29] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:29] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:39] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:48] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:03:48] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:04:49] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:05:49] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2022-06-10 12:05:49] local.ERROR: include(C:\Users\WIN 10\Desktop\BE2-NhomH\Porto-web\vendor\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer/../laravel/socialite/src/SocialiteServiceProvider.php): failed to open stream: No such file or directory at C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\WIN 10...', 571, Array)
+#1 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\Users\\\\WIN 10...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Sociali...')
+#4 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(816): spl_autoload_call('Laravel\\\\Sociali...')
+#5 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Sociali...', 'Laravel\\\\Sociali...')
+#6 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(772): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Sociali...')
+#7 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(313): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\WIN 10\\Desktop\\BE2-NhomH\\Porto-web\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
