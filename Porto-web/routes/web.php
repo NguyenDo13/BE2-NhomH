@@ -1,7 +1,11 @@
 <?php
 
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +28,7 @@ Route::get('/add', [CartController::class, 'add']);
 Route::get('/update', [CartController::class, 'update']);
 Route::get('/remove', [CartController::class, 'remove']);
 
-Route::get('/login', function(){
+Route::get('/login', function () {
     return view('clients.pages.login');
 });
 
@@ -33,4 +37,12 @@ Route::get('/product', function () {
 });
 Route::get('/category', function () {
     return view('clients.pages.categories');
+});
+
+//Login by gmail
+Route::get('/login-google', [AdminController::class, 'login_google']);
+Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
+
+Route::get('/home', function () {
+    return view('clients.pages.home');
 });

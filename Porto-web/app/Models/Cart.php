@@ -21,4 +21,8 @@ class Cart extends Model
     protected $fillable = [
         'id', 'id_user',
     ];
+    
+    public function getDetail(){
+        return $this->hasMany('CartDetail');
+    }
 }
