@@ -32,8 +32,6 @@ Route::get('/product/{id}', [ProductController::class, 'getProductById']);
 Route::get('/product', function () {
     return view('clients.pages.detail_product');
 });
-// Route::get('/category', function () {
-//     return view('clients.pages.categories');
-// });
+
 Route::get('/', [ProductController::class, 'ShowFeatureProduct']);
 

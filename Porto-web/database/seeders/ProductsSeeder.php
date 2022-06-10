@@ -16,6 +16,7 @@ class ProductsSeeder extends Seeder
     {
         DB::table('products')->insert([
             'name' => 'Brown Women Casual HandBag',
+            'category_name' => 'FASHION',
             'price' => 269.00,
             'image' => 'product-1.png',
             'size' => 'S'.'M'.'XL',
@@ -23,7 +24,7 @@ class ProductsSeeder extends Seeder
                             Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
                             Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
             'qty' => 1,
-            'feature' => 0,     
+            'feature' => 3,     
             'sale'=> '30%',
             'tag_id'=>2,
             'created_at' => date("Y-m-d H:i:s"),
@@ -31,13 +32,14 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Blue Backpack for Young',
+            'category_name' => 'CLOTHINGS',
             'price' => 111.00,
             'image' => 'balo-xanh.jpg',
             'size' => 'S'.'M'.'XL',
             'description' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                              Excepteur sint occaecat cupidatat non.',
                              'qty' => 2,
-            'feature' => 1,
+            'feature' => 2,
             'sale'=> '40%',
             'tag_id'=>1,
             'created_at' => date("Y-m-d H:i:s"),
@@ -45,6 +47,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Men Sports Travel Bag',
+            'category_name' => 'CAPS',
             'price' => 299.00,
             'image' => 'product-2.png',
             'size' => 'S'.'M'.'XL',
@@ -60,6 +63,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Ultimate 3D Bluetooth Speaker',
+            'category_name' => 'ELECTRONICS'.', MUSIC',
             'price' => 108.00,
             'image' => 'product-3.png',
             'size' => 'S'.'M'.'XL',
@@ -67,7 +71,7 @@ class ProductsSeeder extends Seeder
                              Excepteur sint occaecat cupidatat non.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             'qty' => 1,
-            'feature' => 0,
+            'feature' => 1,
             'sale'=> '20%',
             'tag_id'=>1,
             'created_at' => date("Y-m-d H:i:s"),
@@ -75,6 +79,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Ultimate 3D Bluetooth Speaker',
+            'category_name' => 'ELECTRONICS'.', MUSIC',
             'price' => 108.00,
             'image' => 'loa-chuyendoi.jpg',
             'size' => 'S'.'M'.'XL',
@@ -90,6 +95,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Men Belt Double Set',
+            'category_name' => 'FASHION',
             'price' => 299.00,
             'image' => 'product-4.png',
             'size' => 'S'.'M'.'XL',
@@ -105,6 +111,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Men Belt Double Set',
+            'category_name' => 'FASHION',
             'price' => 299.00,
             'image' => 'best-2.jpg',
             'size' => 'S'.'M'.'XL',
@@ -120,6 +127,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Men Black Sports Watch',
+            'category_name' => 'CLOTHINGS',
             'price' => 111.00,
             'image' => 'product-5.png',
             'size' => 'S'.'M'.'XL',
@@ -134,6 +142,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Basketball Sports Blue Shoes',
+            'category_name' => 'SHOES',
             'price' => 111.00,
             'image' => 'Best-3.jpg',
             'size' => 'S'.'M'.'XL',
@@ -149,6 +158,7 @@ class ProductsSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'name' => 'Casual Spring Blue Shoes',
+            'category_name' => 'SHOES',
             'price' => 55.00,
             'image' => 'giay-xanh.jpg',
             'size' => 'S'.'M'.'XL',

@@ -17,8 +17,8 @@
                               </div>
                             
                                    
-                              <div class="item-content">
-                                   <a href="" class="tag-item">Fashion</a>
+                              <div class="item-content">                                        
+                                   <a href="" class="tag-item">{{$feature->category_name}}</a>
                                    <a href="{{ url('product/'.$feature->id)}}" class="name-item">
                                         <h3>{{$feature->name}}</h3>
                                    </a>

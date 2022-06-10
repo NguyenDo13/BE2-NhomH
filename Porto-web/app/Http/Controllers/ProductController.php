@@ -41,7 +41,6 @@ class ProductController extends Controller
         $product = Product::where('type_id', $id)->get();
         return view('producttype', ['productType' => $product]);
     }
-
     function ShowAllProduct()
     {
         $Product = Product::simplePaginate(3);
@@ -52,7 +51,10 @@ class ProductController extends Controller
         $Product = Product::where('feature', 1)->get();
         return view('clients.pages.home', compact("Product"));
     }
-   
+//    function showProductByCategory(){
+//        $Product_cate = Product::where('category_name')->get();
+//        return view('clients.pages.home', compact("Product"));
+//    }
 
     // function getProductByTypeID($id)
     // {
