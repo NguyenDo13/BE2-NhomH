@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Cart; //sử dụng để truy vấn data bằng eloquent
 use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Query Builder (DB::)
 use SebastianBergmann\Template\Template;
-use App\Models\cart_details;
+use App\Models\cart_detail;
 use App\Models\Product;
 use function PHPUnit\Framework\isEmpty;
 
@@ -41,7 +41,7 @@ class CartController extends Controller
         // }
 
         //3: delete cart
-        $CartDetail = cart_details::where('id_cart', $id_Carts)->where('id_prod', $id)->delete();
+        $CartDetail = cart_detail::where('id_cart', $id_Carts)->where('id_prod', $id)->delete();
         return redirect()->route('show_cart');
     }
     //update cart
@@ -74,7 +74,7 @@ class CartController extends Controller
         //TODO 1:f
         foreach($request['id'] as $item){
             // echo $item;
-            cart_details::where('id_prod', $item)->update(['qty' => $request['qty'][$count]]);
+            cart_detail::where('id_prod', $item)->update(['qty' => $request['qty'][$count]]);
             $count++;
         }
         // $CartDetail = 
@@ -102,7 +102,7 @@ class CartController extends Controller
         }
 
         //get cart
-        $this->data['carts'] = cart_details::where('id_Cart', $this->data['id_cart'])->get()->toArray();
+        $this->data['carts'] = cart_detail::where('id_Cart', $this->data['id_cart'])->get()->toArray();
         $this->data['products'] = [];
         //get list prod
         foreach ($this->data['carts'] as $item) {  
