@@ -2,9 +2,6 @@
     <div class="section">
         <!-- container -->
         <div class="">
-
-
-
             <!-- STORE -->
             <div id="store" class="" style="float:right ;">
                 <!-- store top filter -->
@@ -12,20 +9,21 @@
                     <div class="store-sort">
                         <label>
                             Sort By:
-                            <select class="input-select">
-                                <option value="menu_order" selected='selected'>Default sorting</option>
-                                <option value="popularity">Sort by popularity</option>
-                                <option value="rating">Sort by average rating</option>
-                                <option value="date">Sort by latest</option>
-                                <option value="price">Sort by price: low to high</option>
-                                <option value="price-desc">Sort by price: high to low</option>
+                            <select id="shop-sort" class="input-select">
+                                <option value="1" selected='selected'>Default sorting</option>
+                                <option value="2">Sort by feature</option>
+                                <option value="3">Sort by price: high to low</option>
+                                <option value="4">Sort by price: low to high</option>
+                                <option value="5">Sort by name: A-Z</option>
+                                <option value="6">Sort by name: Z-A</option>
+                                <option value="7">Sort by sale</option>
                             </select>
                         </label>
 
 
                     </div>
 
-                    <ul class="store-grid">
+                    {{-- <ul class="store-grid">
                         <label>
                             Show:
                             <select class="input-select">
@@ -36,12 +34,12 @@
                         </label>
                         <li class="active"><i class="fa fa-th"></i></li>
                         <li><a href="#"><i class="fa fa-th-list"></i></a></li>
-                    </ul>
+                    </ul> --}}
                 </div>
                 <!-- /store top filter -->
 
                 <!-- store products -->
-                <div class="row">
+                <div class="row ab">
                     <!-- /product -->
                     <!-- product -->
                     @foreach ($Product as $pageProduct)
@@ -190,3 +188,4 @@
         <!-- /container -->
     </div>
 </div>
+

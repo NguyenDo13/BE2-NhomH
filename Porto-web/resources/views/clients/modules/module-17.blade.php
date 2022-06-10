@@ -27,7 +27,7 @@
                 </h4>
                 <p class="product-description">{{$detail->description}}</p>
                 <p>SKU: <span style="font-weight: bold;">PT0007</span></p>
-                <p>CATEGORY: <span style="font-weight: bold;">FASHION</span></p>
+                <p>CATEGORY: <span style="font-weight: bold;">{{$detail->category_name}}</span></p>
                 <p>TAGS: <span style="font-weight: bold;">BAG,CLOTHES,FASHION</span></p>
                 <h5 class="colors">COLOR:
                     <span class="color black"></span>

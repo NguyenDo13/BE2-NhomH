@@ -36,5 +36,92 @@
     </script>
     <script src="{{ asset('assets/clients/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('assets/clients/js/module-14.js') }}"></script>
+    <script>
+        
+        function ShowGallery() {
+
+            if ($('#shop-sort option:selected').val() == 2) {
+
+                $.ajax({
+                    url: '/showfeature',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+
+            } else if ($('#shop-sort option:selected').val() == 1) {
+                $.ajax({
+                    url: '/showall',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+                });
+
+
+            } else if ($('#shop-sort option:selected').val() == 4) {
+                $.ajax({
+                    url: '/showhightolow',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+
+
+            } else if ($('#shop-sort option:selected').val() == 3) {
+                $.ajax({
+                    url: '/showlowtohigh',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+
+            } else if ($('#shop-sort option:selected').val() == 5) {
+                $.ajax({
+                    url: '/showa-z',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+
+            } else if ($('#shop-sort option:selected').val() == 6) {
+                $.ajax({
+                    url: '/showz-a',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+
+            } else if ($('#shop-sort option:selected').val() == 7) {
+                $.ajax({
+                    url: '/show-sale',
+                    type: 'GET',
+                }).done(function(res) {
+                    RenderGallery(res);
+                    alertify.success('Update successfully');
+
+                });
+            }
+        }
+        function RenderGallery(res) {
+            $(".ab").empty();
+            $(".ab").html(res);
+
+        }
+        $("#shop-sort").change(function() {
+
+            ShowGallery();
+        });
+    </script>
 @endsection
 @endsection
