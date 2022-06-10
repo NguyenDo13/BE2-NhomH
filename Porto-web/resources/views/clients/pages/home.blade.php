@@ -21,15 +21,16 @@
 @endsection
 
 @section('body')
+
     @include('clients.modules.module-4')
-    @include('clients.modules.module-5')
+    {{-- @include('clients.modules.module-5') --}}
     @include('clients.modules.module-6')
     @include('clients.components.sale_product')
     @include('clients.modules.module-7')
-    @include('clients.modules.module-8')
-    @include('clients.modules.module-9')
-    @include('clients.modules.module-10')
-    @include('clients.modules.module-11')
+    {{-- @include('clients.modules.module-8') --}}
+    {{-- @include('clients.modules.module-9') --}}
+    {{-- @include('clients.modules.module-10')
+    @include('clients.modules.module-11') --}}
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

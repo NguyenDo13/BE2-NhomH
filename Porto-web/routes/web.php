@@ -15,20 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/category', [ProductController::class, 'ShowAllProduct']);
-Route::get('/', function () {
-    return view('clients.pages.home');
-});
 
 
-Route::get('/cart', [CartController::class, 'initData'])->name('cart');
+Route::get('/add', [CartController::class, 'add']);
+Route::get('/update', [CartController::class, 'update']);
+Route::get('/remove', [CartController::class, 'remove']);
 
 Route::get('/login', function(){
     return view('clients.pages.login');
 });
-// Product detail
-Route::get('/product/{id}', [ProductController::class, 'getProductById']);
-// Product->category
+
 Route::get('/product', function () {
     return view('clients.pages.detail_product');
 });
@@ -43,3 +39,16 @@ Route::get('/showsale', [ProductController::class,'SortProductSale']);
 Route::get('/showa-z', [ProductController::class,'SortAZ']);
 Route::get('/showz-a', [ProductController::class,'SortZA']);
 
+Route::get('/category', function () {
+    return view('clients.pages.categories');
+});
+//Login by gmail
+Route::get('/login-google', [AdminController::class, 'login_google']);
+Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
+
+Route::get('/', [ProductController::class, 'getSaleProduct']);
+Route::prefix('/cart')->group(function(){
+    Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
+    Route::get('/delete/{id}', [CartController::class, 'deleteCart'])->name('delete_cart');
+    Route::post('/update',[CartController::class, 'updateCart'])->name('update_cart');
+});

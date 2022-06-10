@@ -15,15 +15,15 @@ class CreateTableProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id'); // cột id có kiểu là interger và tự động tăng
-            $table->string('name'); // cột name có kiểu là varchar
-            $table->string('category_name');// cột category_name có kiểu varchar 
+            $table->string('name'); // cột name có kiểu là varchar và giới hạn là 150 ký tự
+            $table->string('category_name');
             $table->integer('price'); // cột price có kiểu là integer
-            $table->string('image', 255); // cột image có kiểu là varchar
+            $table->string('image', 255); // cột image có kiểu là varchar và giới hạn là 255 ký tự
             $table->String('size', 255);
             $table->text('description');
             $table->integer('qty');
-            $table->integer('feature');
-            $table->string('sale');
+            $table->integer('feature'); // cột description có kiểu là text và có thể để NULL
+            $table->integer('sale');
             $table->integer('tag_id');
             $table->timestamps(); // cột thể hiện timestamps mặc định
         });
