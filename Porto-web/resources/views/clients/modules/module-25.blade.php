@@ -21,7 +21,7 @@
                             <div class="position-relative">
                                 <a href=""><img src="{{ asset('assets/clients/images/' . $item[0]['image']) }}" alt=""
                                         class="img-item"></a>
-                                <a href="" class="remove-item" aria-label="Remove this item"><i
+                                <a href="{{ route('delete_cart', ['id' => $item[0]['id']]) }}" class="remove-item" aria-label="Remove this item"><i
                                         class="fa fa-times"></i></a>
                             </div>
                         </td>
