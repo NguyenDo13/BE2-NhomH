@@ -10,24 +10,29 @@
                </tr>
           </thead>
           <tbody>
+               @foreach ($products as $item)
                <tr>
                     <td class="item-thumbnail">
                          <div class="position-relative">
-                              <a href=""><img src="{{ asset('assets/clients/images/product-1.png') }}" alt="" class="img-item"></a>
+                              <a href=""><img src="{{asset('assets/clients/images/' . $item[0]['image']) }}" alt="" class="img-item"></a>
                               <a href="" class="remove-item" aria-label="Remove this item"><i
                                         class="fa fa-times"></i></a>
                          </div>
                     </td>
                     <td class="item-name">
-                         <a href="">Men Sports Travel Bag</a>
+                         <a href="">{{$item[0]['name']}}</a>
                     </td>
                     <td class="item-price">
-                         <span>$299.00</span>
+                         <span>{{$item[0]['price']}}.00</span>
                     </td>
                     <td class="item-quantity">
                          <div class="box-quantity">
                               <button type="button" class="minus" value="-"></button>
-                              <input type="text" class="qty" step="1" min="0" max value="1" inputmode="numeric">
+                              @foreach ($carts as $i)
+                              @if ($i['id_prod'] == $item[0]['id'])
+                              <input type="text" class="qty" step="1" min="0" max value="{{$i['qty']}}" inputmode="numeric">
+                              @endif
+                              @endforeach
                               <button type="button" class="plus" value="+"></button>
                          </div>
                     </td>
@@ -35,6 +40,7 @@
                          <span>$299.00</span>
                     </td>
                </tr>
+               @endforeach
           </tbody>
      </table>
 </div>

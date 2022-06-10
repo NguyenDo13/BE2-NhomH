@@ -44,10 +44,12 @@
                 <div class="row">
                     <!-- /product -->
                     <!-- product -->
+                    @foreach ($Product as $pageProduct)
+                        
                     <div class="col-md-4 col-xs-6">
                         <div class="product">
                             <div class="product-img">
-                                <img src="{{ asset('assets/clients/images/product-1.png') }}" alt="" width="100%">
+                                <img src="{{ asset('assets/clients/images/'.$pageProduct->image) }}" alt="" width="100%">
                                 <div class="product-label text-center">
                                     <span class="sale">-30%</span>
                                     <span class="hot">Hot</span>
@@ -55,7 +57,7 @@
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="{{ url('product/'.$pageProduct->id)}}">{{$pageProduct->name}}</a></h3>
                                 <div class="product-rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -63,7 +65,7 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <h4 class="product-price">$980.00 -$999.99</h4>
+                                <h4 class="product-price">${{$pageProduct->price}}</h4>
 
                                 <div class="product-btns">
                                     <button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
@@ -74,10 +76,12 @@
 
                         </div>
                     </div>
+                    @endforeach
+                    
                     <!-- /product -->
                     <!-- /product -->
                     <!-- product -->
-                    <div class="col-md-4 col-xs-6">
+                    {{-- <div class="col-md-4 col-xs-6">
                         <div class="product">
                             <div class="product-img">
                                 <img src="{{ asset('assets/clients/images/product-2.png') }}" alt="" width="100%">
@@ -140,12 +144,13 @@
 
                         </div>
                     </div>
-                    <!-- /product -->
+                    <!-- /product --> --}}
 
 
 
 
                 </div>
+                
                 <div class="row">
                     <!-- /store products -->
 
@@ -166,11 +171,11 @@
                         </div>
                         <nav class="woocommerce-pagination">
                             <form class="woocommerce-viewing" method="get">
-
+                                
                                 <ul class="store-pagination">
-                                    <li class="active">1</li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                    
+                                    <li class="active">{{ $Product->links() }}</li>
+                                    
                                 </ul>
                                 <input type="hidden" name="paged" value="" />
 

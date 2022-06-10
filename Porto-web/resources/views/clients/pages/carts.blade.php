@@ -1,8 +1,7 @@
-
 @extends('layouts.master')
 
 @section('title')
-    {{$title}}
+    Giỏ hàng
 @endsection
 
 @section('css')

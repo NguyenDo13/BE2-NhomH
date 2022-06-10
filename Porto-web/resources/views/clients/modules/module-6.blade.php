@@ -6,18 +6,21 @@
           <div class="container">
                <div class="slider">
                     <div class="owl-carousel owl-theme">
+                         @foreach ($Product as $feature)
                          <div class="product item text-center">
                               <div class="image-item">
                                    <div class="labels">
                                         <div class="onhot"><span>Hot</span></div>
                                         <div class="onsale"><span>-19%</span></div>
                                    </div>
-                                   <img class="" style="width: 100%; height:100%" src="{{ asset('assets/clients/images/product-1.png') }}" alt="">
+                                   <img class="" style="width: 100%; height:100%" src="{{ asset('assets/clients/images/'.$feature->image) }}" alt="">
                               </div>
+                            
+                                   
                               <div class="item-content">
                                    <a href="" class="tag-item">Fashion</a>
-                                   <a href="" class="name-item">
-                                        <h3>Brown Women Casual HandBag</h3>
+                                   <a href="{{ url('product/'.$feature->id)}}" class="name-item">
+                                        <h3>{{$feature->name}}</h3>
                                    </a>
                                    <div class="star-item">
                                         <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
@@ -25,11 +28,7 @@
                                    </div>
                                    <div class="price-item">
                                         <span>
-                                             <span>$</span>209.00
-                                        </span>
-                                        -
-                                        <span>
-                                             <span>$</span>269.00
+                                             <span>$</span>{{$feature->price}}
                                         </span>
                                    </div>
                               </div>
@@ -49,7 +48,8 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="product item text-center">
+                         @endforeach
+                         {{-- <div class="product item text-center">
                               <div class="image-item">
                                    <div class="labels">
                                         <div class="onhot"><span>Hot</span></div>
@@ -170,7 +170,7 @@
                                         <i class="fas fa-external-link-alt" style="font-size: 14px;"></i>
                                    </div>
                               </div>
-                         </div>
+                         </div> --}}
      
                     </div>
                </div>

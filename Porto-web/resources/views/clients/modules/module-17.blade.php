@@ -1,8 +1,12 @@
+@foreach ($detail as $detail)
+    
 <div class="module-17">
     <div class="container">
         <div class="col-md-12 " style="float: right;">
             <div class="row">
-                <h3 class="product-title">Brown Women Casual HandBag</h3>
+
+                <h3 class="product-title">{{$detail->name}}</h3>
+                
                 <div class="rating" style="display: flex;">
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
@@ -19,11 +23,9 @@
                 </div>
             </div>
             <div class="row">
-                <h4 class="price"> <span>$209.00 - $269.00</span>
+                <h4 class="price"> <span>${{$detail->price}} - ${{$detail->price}}</span>
                 </h4>
-                <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-                    magnam harum quibusdam quo, repudiandae corrupti est omnis molestias ex asperiores magni, quae ad
-                    mollitia laudantium maxime dignissimos pariatur quam officiis, iste dolor a. Enim, repellat!</p>
+                <p class="product-description">{{$detail->description}}</p>
                 <p>SKU: <span style="font-weight: bold;">PT0007</span></p>
                 <p>CATEGORY: <span style="font-weight: bold;">FASHION</span></p>
                 <p>TAGS: <span style="font-weight: bold;">BAG,CLOTHES,FASHION</span></p>
@@ -76,3 +78,4 @@
         </div>
     </div>
 </div>
+@endforeach

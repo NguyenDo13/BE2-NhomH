@@ -17,7 +17,6 @@ class ProductController extends Controller
 
     }
     // function index()
-    // {
     //     $product = Product::all();
 
     //     $product_type = Product_type::all();
@@ -27,7 +26,6 @@ class ProductController extends Controller
     // }
     function page($name = "/")
     {
-
         $product = Product::all();
         return view($name, ['data' => $product]);
     }
@@ -41,12 +39,6 @@ class ProductController extends Controller
     {
         $product = Product::where('type_id', $id)->get();
         return view('producttype', ['productType' => $product]);
-    }
-
-    function ShowAllProduct()
-    {
-        $Product = Product::simplePaginate(3);
-        return view('clients.pages.categories', compact("Product"));
     }
     function ShowFeatureProduct()
     {
