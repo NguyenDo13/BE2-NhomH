@@ -123,7 +123,7 @@ class CartController extends Controller
         //all data cart
 
         // return dd($this->data['carts']);
-        return redirect()->route('show_cart');
+        return view('clients.pages.carts', $this->data);
     }
 
     //checkout
