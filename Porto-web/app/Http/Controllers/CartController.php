@@ -10,6 +10,7 @@ use App\Models\Product;
 use App\Models\cart_detail;
 use Database\Seeders\cart_details;
 use Database\Seeders\carts;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\DB;//sử dụng khi truy vấn data bằng Query Builder (DB::)
 
 class CartController extends Controller
@@ -19,7 +20,7 @@ class CartController extends Controller
 
     public function showCart(){
         //get id_user
-        $idUser = 1;
+        $idUser = Session::get('cumtomer_id');
         $this->data['idUser'] = $idUser;
 
         //get id_cart
