@@ -20,11 +20,6 @@ use Laravel\Socialite\Facades\Socialite;
 */
 
 
-Route::get('/cart', [CartController::class, 'showCart'])->name('cart');
-
-
-
-
 
 Route::get('/add', [CartController::class, 'add']);
 Route::get('/update', [CartController::class, 'update']);
@@ -46,3 +41,8 @@ Route::get('/login-google', [AdminController::class, 'login_google']);
 Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
 
 Route::get('/', [ProductController::class, 'getSaleProduct']);
+Route::prefix('/cart')->group(function(){
+    Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
+    Route::get('/delete/{id}', [CartController::class, 'deleteCart'])->name('delete_cart');
+    Route::post('/update',[CartController::class, 'updateCart'])->name('update_cart');
+});
