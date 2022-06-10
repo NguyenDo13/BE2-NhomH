@@ -13,13 +13,13 @@
 
 <body>
     @section('header')
-    <h1></h1>
+        @include('clients.modules.header')
     @show
     @section('body')
-    <h1>custom body here</h1>
+        <h1>custom body here</h1>
     @show
     @section('footer')
-     @include('clients.modules.module-12')
+        @include('clients.modules.module-12')
     @show
     @yield('js')
 </body>

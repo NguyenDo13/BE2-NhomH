@@ -1,0 +1,340 @@
+.header-container :root {
+    --main-color: #777;
+    --color-nav: #555;
+    --black-color: #000;
+}
+
+.header-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container li {
+    list-style: none;
+}
+
+.header-container header {
+    width: 100%;
+    height: 200px;
+}
+
+.header-container {
+    background-color: white;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*header-top*/
+
+.header-container .header-top {
+    height: 42px;
+    border-top: 0.5px solid #F4F4F4;
+    border-bottom: 0.5px solid #F4F4F4;
+}
+
+.header-container .header-top-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*header-top-list*/
+
+.header-container .header-top-list {
+    display: flex;
+    margin-right: 16px;
+}
+
+.header-container .header-top-item {
+    height: 100%;
+}
+
+.header-container .header-top-item a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+
+/*nation*/
+
+.header-container .nation {
+    display: flex;
+    padding: 0 8px;
+}
+
+.header-container .nation>div {
+    margin: 0 8px;
+}
+
+.header-container .languages,
+.header-container .money {
+    padding-top: 8px;
+}
+
+.header-container .languages-flag {
+    width: 16px;
+    height: 12px;
+}
+
+.header-container .languages,
+.header-container .money span {
+    font-size: 12px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.header-container .languages {
+    padding-top: 12px;
+}
+
+.header-container .languages,
+.header-container .money i {
+    color: var(--main-color);
+    text-align: center;
+}
+
+
+/*link*/
+
+.header-container .share {
+    display: flex;
+}
+
+.header-container .share-link {
+    margin: 8px 6px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.header-container .share-link i {
+    color: rgb(34, 37, 41);
+    font-size: 13px;
+}
+
+.header-container .facebook:hover {
+    background-color: #3D548E;
+}
+
+.header-container .twitter:hover {
+    background-color: #27A4D9;
+}
+
+.header-container .instagram:hover {
+    background-color: #A8887B;
+}
+
+
+/*header -main*/
+
+.header-container .header-main {
+    display: flex;
+    padding: 27px 0;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.header-container .header-main-left {
+    width: 20%;
+    height: 100%;
+}
+
+.header-container .header-main-left img {
+    width: 111px;
+    text-align: left;
+}
+
+.header-container .header-main-right {
+    display: flex;
+}
+
+.header-container .header-main-right__input {
+    width: 568px;
+    height: 40px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 55px;
+    display: flex;
+}
+
+.header-container .header-main-right__input input {
+    width: 388px;
+    height: 100%;
+    margin: 0 0 0 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    border-right: 1px solid #fff;
+}
+
+.header-container .header-main-right__choose {
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    padding: 8px;
+    border-right: 1px solid #fff;
+    background-color: #F4F4F4;
+    border: none;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+
+.header-container .header-main-right__choose:hover {
+    cursor: pointer;
+}
+
+.header-container .header-main-right__choose span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.header-container .header-main-right__btn i {
+    flex: 1;
+    padding: 12px;
+    color: var(--main-color);
+}
+
+.header-container .header-main-right__call {
+    display: flex;
+    margin: 0 20px;
+}
+
+.header-container .header-main-right__call-icon img {
+    width: 30px;
+    height: 30px;
+    transform: translateY(30%);
+    margin: 0 10px;
+}
+
+.header-container .header-main-right__call-phone span {
+    font-size: 10px;
+    color: rgb(34, 37, 41);
+    font-weight: 600;
+}
+
+.header-container .header-main-right__call-phone p {
+    font-weight: bold;
+    color: rgb(34, 37, 41);
+}
+
+.header-container .header-main-right__wrapper .cart {
+    margin: 12px;
+    font-size: 24px;
+    color: rgb(34, 37, 41);
+}
+
+
+/*header - bottom*/
+
+.header-container .header-bottom {
+    width: 100%;
+    height: 55px;
+    flex: 1;
+}
+
+.header-container .header-bottom__nav {
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header-container .header-bottom__nav-item {
+    height: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-nav);
+    margin-right: 32px;
+    display: block;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header-container .active {
+    color: #27A4D9;
+}
+
+.header-container .header-bottom__nav-item:hover {
+    color: #27A4D9;
+}
+
+
+/*dropdown categories*/
+
+.header-container .dropdown {
+    position: absolute;
+    box-shadow: 1px 1px 2px 1px #888888;
+    margin-top: -20px;
+    width: 650px;
+    min-width: 100%;
+    display: none;
+}
+
+.header-container .container:hover .dropdown {
+    display: block;
+}
+
+.header-container .dropdown-row {
+    padding: 8px;
+}
+
+.header-container .container {
+    position: relative;
+    display: block;
+}
+
+.header-container .dropdown-row {
+    display: flex;
+}
+
+.header-container .dropdown-col h4 {
+    font-size: 13px;
+    color: var(--color-nav);
+    font-weight: 800;
+    padding: 8px 4px;
+}
+
+.header-container .dropdown-col ul li a {
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.header-container .dropdown-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.header-container .dropdown-col ul li {
+    padding: 8px 4px;
+}
+
+.header-container .dropdown-col img {
+    width: 230px;
+}
+
+.header-container .new {
+    background-color: rgb(41, 252, 41);
+    font-size: 10px;
+    padding: 0 2px;
+}
+
+.header-container .dropdown-col:nth-child(2) {
+    margin: 0 40px;
+}
+
+.header-container .btn-search:hover {
+    cursor: pointer;
+}
