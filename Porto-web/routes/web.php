@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/delete',[CartController::class, 'deleteCart']);
+
+Route::prefix('/cart')->group(function(){
+     Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
+     Route::get('/delete/{id}', [CartController::class, 'deleteCart'])->name('delete_cart');
+     Route::post('/update',[CartController::class, 'updateCart'])->name('update_cart');
+});
 
 
 

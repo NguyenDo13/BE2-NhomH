@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Cart; //sử dụng để truy vấn data bằng eloquent
-use App\Models\cart_detail;
 use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Query Builder (DB::)
 use SebastianBergmann\Template\Template;
-
+use App\Models\cart_details;
+use App\Models\Product;
 use function PHPUnit\Framework\isEmpty;
 
 session_start();
@@ -17,71 +17,102 @@ class CartController extends Controller
 
     //dữ liệu dùng chung
     public $data = [];
-    private $insert = ['2', '5', 'M', '4'];
-    private $idUser;
-
-    //TODO: process array insert
-    private function processArray()
-    {
-        $idCart = Cart::orderBy('id')->get();
-        foreach ($idCart as $item) {
-            $this->insert[0] = rand(1, $item['id']);
-            $this->insert[1] = rand(1, 5);
-            $this->insert[3] = rand(1, 5);
-        }
-    }
-    //khởi tạo dữ liệu mẫu
-    public function initData()
-    {
-        //reset id
-        DB::update("ALTER TABLE carts AUTO_INCREMENT = 1;");
-        //insert cart
-        DB::table('carts')->insert([
-            'id_user' => $this->idUser,
-        ]);
-        $this->idUser++;
-        //insert detail
-        $this->processArray();
-        DB::table('cart_details')->insert([
-            'id_cart' => $this->insert[0],
-            'id_prod' => $this->insert[1],
-            'size' => $this->insert[2],
-            'qty' => $this->insert[3],
-        ]);
-        //get data
-        $carts = Cart::all();
-        $this->data['carts'] = $carts->fresh(); //lam moi data
-
-        $this->data['cart_details'] = DB::table('cart_details')->get();
-        return dd($this->data);
-    }
 
     //Delete cart
-    public function deleteCart()
+    public function deleteCart($id)
     {
-        //TODO check 1: check loginO 
+        if($id == null){
+            return "khong co id";
+        }
         $count = 0;
         //process DELETE
         //1: get id_user
-        $idUser = 2; //for debugs
+        $idUser = 1; //for debugs
 
         //2: get id_cart
-        $Carts = Cart::where('id_user', $idUser)->get(); //get cart from id_user
-        foreach ($Carts as $i) {
-            $idCart = $i['id'];
-            $count++;
-        }
+        $id_Carts = Cart::where('id_user', $idUser)->value('id'); //get cart from id_user
+        // foreach ($Carts as $i) {
+        //     $idCart = $i['id'];
+        //     $count++;
+        // }
         //check 2: check empty Cart
-        if ($count <= 0) {
-            return 'Your Cart must have products';
-        }
+        // if ($count <= 0) {
+        //     return 'Your Cart must have products';
+        // }
 
         //3: delete cart
-        $CartDetail = cart_detail::where('id_cart', $idCart)->delete();
+        $CartDetail = cart_details::where('id_cart', $id_Carts)->where('id_prod', $id)->delete();
+        return redirect()->route('show_cart');
+    }
+    //update cart
+    public function updateCart(Request $request)
+    {
+        $count = 0;
+        
+        // $size = 'XL';
 
-        //4: get all cart to check
-        $CartDetail = cart_detail::all();
+        // if(isEmpty($request)){
+        //     return dd($request);
+        // }
+        //check login or not
+        // if(null !== ($_SESSION('id_user'))){
+        //     return 'Go to Login';
+        // }
 
-        return view('template', ['data' => $CartDetail]);
+        // //check empty Cart
+        // $Carts = Cart::where('id_user', $idUser)->get();
+        // // dd($Carts);
+        // foreach ($Carts as $i) {
+        //     $count++;
+        //     $idCart = $i['id'];
+        // }
+        // if ($count <= 0) {
+        //     return 'Your Cart must have products';
+        // }
+
+        //process update
+        //TODO 1:f
+        foreach($request['id'] as $item){
+            // echo $item;
+            cart_details::where('id_prod', $item)->update(['qty' => $request['qty'][$count]]);
+            $count++;
+        }
+        // $CartDetail = 
+        // $CartDetail = cart_details::where('id_cart', $idCart)->update(['qty' => $qty]);
+        // $CartDetail = cart_details::where('id_cart', $idCart)->get();
+
+
+        // return view('template', ['data' => $CartDetail]);
+        // return dd($CartDetail);
+        
+        return redirect()->route('show_cart');
+    }
+    
+    public function showCart(){
+        //get id_user
+        $idUser = 1;
+        $this->data['idUser'] = $idUser;
+
+        //get id_cart
+        $this->data['id_cart'] = Cart::where('id_user', $idUser)->value('id');
+
+        //kiem tra
+        if($this->data['id_cart'] == null){
+            return 'user khong ton tai';
+        }
+
+        //get cart
+        $this->data['carts'] = cart_details::where('id_Cart', $this->data['id_cart'])->get()->toArray();
+        $this->data['products'] = [];
+        //get list prod
+        foreach ($this->data['carts'] as $item) {  
+            $Product = Product::where('id', $item['id_prod'])->get()->toArray();
+            array_push($this->data['products'], $Product);
+        }
+
+        //all data cart
+
+        // return dd($this->data['carts']);
+        return view('clients.pages.carts', $this->data);
     }
 }
