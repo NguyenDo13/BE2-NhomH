@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Quer
 use SebastianBergmann\Template\Template;
 use App\Models\cart_detail;
 use App\Models\Product;
+use Illuminate\Contracts\Session\Session;
+
 use function PHPUnit\Framework\isEmpty;
 
 session_start();
@@ -27,7 +29,7 @@ class CartController extends Controller
         $count = 0;
         //process DELETE
         //1: get id_user
-        $idUser = 1; //for debugs
+        $idUser = Session::get('customer_id'); //for debugs
 
         //2: get id_cart
         $id_Carts = Cart::where('id_user', $idUser)->value('id'); //get cart from id_user
