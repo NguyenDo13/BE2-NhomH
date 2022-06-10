@@ -31,7 +31,7 @@ class CartController extends Controller
         }
 
         //get cart
-        $this->data['carts'] = cart_details::where('id_Cart', $idCart)->get()->toArray();
+        $this->data['carts'] = cart_detail::where('id_Cart', $idCart)->get()->toArray();
         $this->data['products'] = [];
         //get list prod
         foreach ($this->data['carts'] as $item) {  
