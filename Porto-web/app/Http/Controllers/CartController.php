@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Cart;//sử dụng để truy vấn data bằng eloquent
-use App\Models\cart_details;
+// use App\Models\cart_details;
 use App\Models\Product;
+use App\Models\cart_detail;
+use Database\Seeders\cart_details;
+use Database\Seeders\carts;
 use Illuminate\Support\Facades\DB;//sử dụng khi truy vấn data bằng Query Builder (DB::)
 
 class CartController extends Controller
@@ -41,4 +44,8 @@ class CartController extends Controller
         // return dd($this->data['carts']);
         return view('clients.pages.carts', $this->data);
     }
+    // public function getToMany(){
+    //     $this->data['carts'] = Cart::getDetail();
+    //     return dd($this->data['carts']);
+    // }
 }
