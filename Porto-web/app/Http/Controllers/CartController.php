@@ -5,15 +5,16 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Cart; //sử dụng để truy vấn data bằng eloquent
+use App\Models\Order;
 use Illuminate\Support\Facades\DB; //sử dụng khi truy vấn data bằng Query Builder (DB::)
 use SebastianBergmann\Template\Template;
+use Illuminate\Support\Facades\Mail;
 use App\Models\cart_detail;
 use App\Models\Product;
 use Illuminate\Contracts\Session\Session;
 
 use function PHPUnit\Framework\isEmpty;
 
-session_start();
 class CartController extends Controller
 {
 
@@ -109,6 +110,9 @@ class CartController extends Controller
 
         //get cart
         $this->data['carts'] = cart_detail::where('id_Cart', $this->data['id_cart'])->get()->toArray();
+        if($this->data['carts'] == null){
+            return "giỏ hàng trống";
+        }
         $this->data['products'] = [];
         //get list prod
         foreach ($this->data['carts'] as $item) {  
@@ -119,10 +123,54 @@ class CartController extends Controller
         //all data cart
 
         // return dd($this->data['carts']);
-        return view('clients.pages.carts', $this->data);
+        return redirect()->route('show_cart');
     }
-    // public function getToMany(){
-    //     $this->data['carts'] = Cart::getDetail();
-    //     return dd($this->data['carts']);
-    // }
+
+    //checkout
+    public function checkoutCart()
+    {
+        //TODO check 1: check 
+        
+        $count = 0;
+        
+        //process CHECKOUT
+        //1: get id_user
+        $idUser = 1; //for debugs
+        // $idUser = Session::get('customer_id');
+
+        //2: get id_cart
+        $id_Carts = Cart::where('id_user', $idUser)->value('id');
+        
+
+        //3: checkout cart
+        $CartDetail = cart_detail::where('id_cart', $id_Carts)->get()->toArray();
+        // dd($CartDetail);
+        foreach ($CartDetail as $i) {
+            //add to order
+            DB::table('orders')->insert([
+                ['user_id' => $idUser, 'product_id' => $i['id_prod'], 'shipping' => 0 , 'qty' => $i['qty'], 'price' => 30000],
+            ]); 
+            
+        }
+
+        cart_detail::where('id_cart', $id_Carts)->delete();
+        return redirect()->route('show_cart');
+    }
+
+    //send Mail
+    public function sendMail(){
+        //get id_user->getname,email
+        $name = 'NTS';
+        $sendToEmail = 'sinhlop10a9@gmail.com';
+
+        //get id_order
+        $idOrder = 1;
+
+
+        Mail::send('layouts.emails.sendEmail', ['data' => $idOrder], function($email) use($name, $sendToEmail){
+            $email->subject('Porto - Your order is being processed');
+            $email->to($sendToEmail, $name);
+        });
+        return redirect()->route('show_cart');
+    }
 }
