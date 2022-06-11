@@ -27,22 +27,24 @@ class CartController extends Controller
         // $idUser = 1;
         $idCart = Cart::where('id_user', $idUser)->value('id');
         DB::table('cart_details')->insert([
-            ['id_cart' => $idCart, 'id_prod' => $id, 'size' => 'M' , 'qty' => 1, 'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
+            ['id_cart' => $idCart, 'id_prod' => $id, 'size' => 'M' , 'qty' => 1,
+            'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')],
         ]);
         $this->data['details'] = cart_detail::where('id_cart', $idCart)->get();
         return redirect()->route('show_cart');
     }
+
     //Delete cart
     public function deleteCart($id)
     {
         if($id == null){
             return "khong co id";
         }
-        $count = 0;
+
         //process DELETE
         //1: get id_user
-        // $idUser = Session::get('customer_id'); 
-        $idUser = 1; 
+        $idUser = Session::get('customer_id'); 
+        // $idUser = 1; 
 
         //2: get id_cart
         $id_Carts = Cart::where('id_user', $idUser)->value('id'); //get cart from id_user
@@ -51,47 +53,16 @@ class CartController extends Controller
         $CartDetail = cart_detail::where('id_cart', $id_Carts)->where('id_prod', $id)->delete();
         return redirect()->route('show_cart');
     }
+
     //update cart
     public function updateCart(Request $request)
     {
         $count = 0;
-        
-        // $size = 'XL';
-
-        // if(isEmpty($request)){
-        //     return dd($request);
-        // }
-        //check login or not
-        // if(null !== ($_SESSION('id_user'))){
-        //     return 'Go to Login';
-        // }
-
-        // //check empty Cart
-        // $Carts = Cart::where('id_user', $idUser)->get();
-        // // dd($Carts);
-        // foreach ($Carts as $i) {
-        //     $count++;
-        //     $idCart = $i['id'];
-        // }
-        // if ($count <= 0) {
-        //     return 'Your Cart must have products';
-        // }
-
-        //process update
-        //TODO 1:f
         foreach($request['id'] as $item){
             // echo $item;
             cart_detail::where('id_prod', $item)->update(['qty' => $request['qty'][$count]]);
             $count++;
         }
-        // $CartDetail = 
-        // $CartDetail = cart_details::where('id_cart', $idCart)->update(['qty' => $qty]);
-        // $CartDetail = cart_details::where('id_cart', $idCart)->get();
-
-
-        // return view('template', ['data' => $CartDetail]);
-        // return dd($CartDetail);
-        
         return redirect()->route('show_cart');
     }
     
@@ -129,18 +100,10 @@ class CartController extends Controller
     //checkout
     public function checkoutCart()
     {
-        //TODO check 1: check 
-        
-        $count = 0;
-        
-        //process CHECKOUT
-        //1: get id_user
-        $idUser = 1; //for debugs
-        // $idUser = Session::get('customer_id');
-
+        // $idUser = 1; //for debugs
+        $idUser = Session::get('customer_id');
         //2: get id_cart
         $id_Carts = Cart::where('id_user', $idUser)->value('id');
-        
 
         //3: checkout cart
         $CartDetail = cart_detail::where('id_cart', $id_Carts)->get()->toArray();
@@ -152,7 +115,6 @@ class CartController extends Controller
             ]); 
             
         }
-
         cart_detail::where('id_cart', $id_Carts)->delete();
         return redirect()->route('show_cart');
     }
@@ -160,12 +122,15 @@ class CartController extends Controller
     //send Mail
     public function sendMail(){
         //get id_user->getname,email
-        $name = 'NTS';
-        $sendToEmail = 'sinhlop10a9@gmail.com';
+        // $name = 'NTS';
+        // $sendToEmail = 'sinhlop10a9@gmail.com';
+        $idUser = Session::get('customer_id');
+        $name = Session::get('customer_name');
+        $sendToEmail = Session::get('customer_email');
 
         //get id_order
-        $idOrder = 1;
 
+        $idOrder = Order::Where('user_id', $idUser)->value('id');
 
         Mail::send('layouts.emails.sendEmail', ['data' => $idOrder], function($email) use($name, $sendToEmail){
             $email->subject('Porto - Your order is being processed');

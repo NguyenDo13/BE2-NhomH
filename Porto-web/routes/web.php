@@ -39,6 +39,7 @@ Route::get('/login-google', [AdminController::class, 'login_google']);
 Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
 
 Route::get('/', [ProductController::class, 'getSaleProduct']);
+
 Route::prefix('/cart')->group(function () {
     Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
     Route::get('/add/{id}', [CartController::class, 'addCart']);
