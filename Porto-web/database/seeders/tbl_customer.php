@@ -16,7 +16,7 @@ class tbl_customers extends Seeder
     public function run()
     {
         DB::table('tbl_customers')->insert([
-            
+            ['customer_email' => 'taiem.work2022@gmail.com', 'customer_password' => '1', 'customer_name' => 'Em' , 'customer_picture' => '', 'customer_token' => ''],
         ]);
     }
 }

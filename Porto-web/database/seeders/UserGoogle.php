@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UserGoogle extends Seeder
 {
@@ -13,5 +14,9 @@ class UserGoogle extends Seeder
      */
     public function run()
     {
+        
+        DB::table('usersgg')->insert([
+            ['provider_user_id' => '1', 'provider' => 'GOOGLE', 'user' => '1'],
+        ]);
     }
 }
