@@ -12,9 +12,9 @@
 </head>
 
 <body> --}}
-  <div class="module-14 container">
+  <div class="module-14">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-12">
         <div class="card">
 
           <div class="card card-sidebar">

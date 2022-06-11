@@ -20,10 +20,14 @@
 @section('body')
     <div class="container">
         <div class="row">
+            <div class="col-md-3">
+                @include('clients.modules.module-14')
+            </div>
+            <div class="col-md-9">
 
-            @include('clients.modules.module-14')
-            @include('clients.modules.module-13')
-            @include('clients.modules.module-15')
+                @include('clients.modules.module-13')
+            </div>
+            {{-- @include('clients.modules.module-15') --}}
         </div>
     </div>
 @section('js')

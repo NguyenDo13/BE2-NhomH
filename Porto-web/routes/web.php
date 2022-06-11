@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -18,12 +19,9 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', function () {
-    return view('clients.pages.home');
-});
 
 
-Route::get('/cart', [CartController::class, 'initData'])->name('cart');
+
 
 Route::get('/login', function () {
     return view('clients.pages.login');
@@ -40,6 +38,13 @@ Route::get('/category', function () {
 Route::get('/login-google', [AdminController::class, 'login_google']);
 Route::get('/logingooglecallback', [AdminController::class, 'callback_google']);
 
-Route::get('/home', function () {
-    return view('clients.pages.home');
+Route::get('/', [ProductController::class, 'getSaleProduct']);
+
+Route::prefix('/cart')->group(function () {
+    Route::get('/', [CartController::class, 'showCart'])->name('show_cart');
+    Route::get('/add/{id}', [CartController::class, 'addCart']);
+    Route::get('/delete/{id}', [CartController::class, 'deleteCart'])->name('delete_cart');
+    Route::post('/update', [CartController::class, 'updateCart'])->name('update_cart');
+    Route::get('/checkout', [CartController::class, 'checkoutCart']);
+    Route::get('/send', [CartController::class, 'sendMail']);
 });
