@@ -19,7 +19,7 @@
             <div class="u-columns col2-set">
                 <div class="u-column1 col-1">
                     <form action="" class="formSignin">
-                        <h3 class="title-login"> Enter new Password </h3>
+                        <h3 class="title-login"> Enter Password </h3>
                         <p class="titleinput-login">
                             <label class="mb-1 font-weight-medium" for="password">Password&nbsp;
                                 <span class="required">*</span>

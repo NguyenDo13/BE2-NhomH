@@ -14,6 +14,8 @@
 </head>
 
 <body> --}}
+
+    
     <div class="module-11 container">
         <div class="row">
             <div class="col-md-3">
@@ -91,14 +93,19 @@
                     <h2 class="widgettitle">
                         BEST SELLING PRODUCTS
                     </h2>
+                    @php
+                        $products = \App\Models\product::get();
+                    @endphp
+                    @foreach ($products as $item)
+                    @if ($item->qty >= 10)
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="{{ asset('assets/clients/images/BEST/Best-1.jpg')}}" alt="">
+                                <img src="{{ asset('assets/clients/images/' .$item['image'] ) }}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
-                                    <span class="product-title">Brown Women Casual HandBag</span>
+                                    <span class="product-title"> {{$item['name']}}</span>
                                 </a>
                                 <div class="star-rating" title data-bs-original-title="5.00">
                                     <i class="fa-solid fa-star"></i>
@@ -108,52 +115,12 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                                 <span class="price-product">
-                                    $209.00 – $269.00
+                                    <span>$</span>{{$item['price']}}
                                 </span>
                             </div>
-                        </li>
-                        <li>
-                            <a href="" class="product-image">
-                                <img src="{{ asset('assets/clients/images/BEST/Best-2.jpg')}}" alt="">
-                                <img class="chuyendoi" src="{{asset('assets/clients/images/nit-chuyendoi.jpg')}}" alt="">
-                            </a>
-                            <div class="product-details">
-                                <a href="" title="Ultimate 3D Bluetooth Speaker">
-                                    <span class="product-title">Men Black Gentle Belt</span>
-                                </a>
-                                <div class="star-rating" title data-bs-original-title="5.00">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <span class="price-product">
-                                    $99.00 – $109.00
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" class="product-image">
-                                <img src="{{ asset('assets/clients/images/BEST/Best-3.jpg')}}" alt="">
-                                <img class="chuyendoi" src="{{asset('assets/clients/images/giay-chuyendoi.jpg')}}" alt="">
-                            </a>
-                            <div class="product-details">
-                                <a href="" title="Ultimate 3D Bluetooth Speaker">
-                                    <span class="product-title">Basketball Sports Blue Shoes</span>
-                                </a>
-                                <div class="star-rating" title data-bs-original-title="5.00">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <span class="price-product">
-                                    $101.00 – $111.00
-                                </span>
-                            </div>
-                        </li>
+                        </li>                           
+                    @endif             
+                    @endforeach
                     </ul>
                 </div>
             </div>
@@ -233,14 +200,19 @@
                     <h2 class="widgettitle">
                         TOP RATED PRODUCTS
                     </h2>
+                    @php
+                        $products = \App\Models\product::get();
+                    @endphp
+                    @foreach ($products as $item)
+                    @if ($item->star >= 5)
                     <ul class="product-list">
                         <li>
                             <a href="" class="product-image">
-                                <img src="{{ asset('assets/clients/images/TOP/TOP-1.jpg')}}" alt="">
+                                <img src="{{ asset('assets/clients/images/' .$item['image'] ) }}" alt="">
                             </a>
                             <div class="product-details">
                                 <a href="" title="Ultimate 3D Bluetooth Speaker">
-                                    <span class="product-title">Brown Women Casual HandBag</span>
+                                    <span class="product-title"> {{$item['name']}}</span>
                                 </a>
                                 <div class="star-rating" title data-bs-original-title="5.00">
                                     <i class="fa-solid fa-star"></i>
@@ -250,11 +222,13 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                                 <span class="price-product">
-                                    $105.00 – $108.00
+                                    <span>$</span>{{$item['price']}}
                                 </span>
                             </div>
-                        </li>
-                        <li>
+                        </li>                           
+                    @endif             
+                    @endforeach
+                        {{-- <li>
                             <a href="" class="product-image">
                                 <img src="{{ asset('assets/clients/images/TOP/TOP-2.jpg')}}" alt="">
                                 <img class="chuyendoi" src="{{ asset('assets/clients/images/loa-chuyendoi.jpg')}}" alt="">
@@ -295,7 +269,7 @@
                                     $99.00 – $109.00
                                 </span>
                             </div>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>

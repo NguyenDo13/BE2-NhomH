@@ -30,7 +30,7 @@
                             <label class="mb-1 font-weight-medium" for="password">Password&nbsp;
                                 <span class="required">*</span>
                             </label>
-                            <input type="password   " class="input-login" name="Password" id="Password">
+                            <input type="password" class="input-login" name="Password" id="Password">
                         </p>
                         <div class="Remember-password d-flex flex-column flex-sm-row justify-content-between mb-4">
                             <div class="checkbox-login my-2 my-sm-0">
@@ -58,6 +58,12 @@
                                 <span class="required">*</span>
                             </label>
                             <input type="text" class="input-login" name="email" id="email">
+                        </p>
+                        <p class="titleinput-login">
+                            <label class="mb-1 font-weight-medium" for="password">Password&nbsp;
+                                <span class="required">*</span>
+                            </label>
+                            <input type="password" class="input-login" name="Password" id="Password">
                         </p>
                         <div class="Remember-password d-flex flex-column flex-sm-row justify-content-between mb-4">
                             <label for="" style="color: #777777;">A link to set a new password will be sent to your
