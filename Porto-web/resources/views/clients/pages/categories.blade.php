@@ -119,7 +119,6 @@
 
         }
         $("#shop-sort").change(function() {
-
             ShowGallery();
         });
     </script>

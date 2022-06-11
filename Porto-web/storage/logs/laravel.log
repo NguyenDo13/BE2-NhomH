@@ -15946,3 +15946,19 @@ esources\\views/clients/pages/login.blade.php(20): Illuminate\\View\\View->rende
 #71 D:\\Back-end2\\BE2-NhomH\\Porto-web\\server.php(21): require_once('D:\\\\Back-end2\\\\BE...')
 #72 {main}
 "} 
+[2022-06-11 06:30:41] local.ERROR: syntax error, unexpected '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '}' at D:\\Back-end2\\BE2-NhomH\\Porto-web\\app\\Models\\Product.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2022-06-11 06:30:48] local.ERROR: syntax error, unexpected '}', expecting '=' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '}', expecting '=' at D:\\Back-end2\\BE2-NhomH\\Porto-web\\app\\Models\\Product.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2022-06-11 06:30:54] local.ERROR: syntax error, unexpected '}', expecting ',' or ';' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '}', expecting ',' or ';' at D:\\Back-end2\\BE2-NhomH\\Porto-web\\app\\Models\\Product.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2022-06-11 06:30:54] local.ERROR: syntax error, unexpected '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '}' at D:\\Back-end2\\BE2-NhomH\\Porto-web\\app\\Models\\Product.php:14)
+[stacktrace]
+#0 {main}
+"} 
