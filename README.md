@@ -1,6 +1,5 @@
 ### <b><u>BE2-NhomH</u></b>
-![Uploading Creative Chatting App Logo.jpg…]()
-<img>Porto-web/public/assets/clients/images/Best-1.jpg</img>
+![Creative Chatting App Logo](https://user-images.githubusercontent.com/84115673/201934791-26a0363b-f33c-47ee-a11b-5a026eb2f434.jpg)
 # Foobar
 
 Foobar is a Python library for dealing with word pluralization.
