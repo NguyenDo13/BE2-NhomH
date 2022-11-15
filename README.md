@@ -1,4 +1,5 @@
 ### <b><u>BE2-NhomH</u></b>
+<img>Porto-web/public/assets/clients/images/Best-1.jpg</img>
 # Foobar
 
 Foobar is a Python library for dealing with word pluralization.
